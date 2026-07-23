@@ -1,0 +1,13 @@
+build/
+install/
+*.o
+*.so
+*.a
+
+# Python cache
+__pycache__/
+*.pyc
+
+# compiled CLI binaries checked into repo root
+cuszp_transform_cli
+cuszp_transform_only_cli

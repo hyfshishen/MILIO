@@ -1,0 +1,3 @@
+# reconstruction arrays are large (25 MB each) and regenerated on a full run
+*.dat
+*.f32

@@ -1,0 +1,1262 @@
+srun: job 20414195 queued and waiting for resources
+srun: job 20414195 has been allocated resources
+BENCH_START:CESM:CLDICE_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=1.132e-09 nrmse=1.441e-05 maxe=1.52e-07 psnr=90.80
+Encode elapsed time: 0.03257 (s)
+# encode3 rate: 19.27 (GB / sec) 
+Decode elapsed time: 0.00295 (s)
+# decode3 rate: 212.63 (GB / sec) 512
+BENCH_START:CESM:CLDICE_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=6.705e-09 nrmse=8.535e-05 maxe=8.768e-07 psnr=75.36
+Encode elapsed time: 0.01112 (s)
+# encode3 rate: 56.44 (GB / sec) 
+Decode elapsed time: 0.00258 (s)
+# decode3 rate: 243.48 (GB / sec) 341
+BENCH_START:CESM:CLDICE_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=1.579e-08 nrmse=0.0002011 maxe=1.626e-06 psnr=67.91
+Encode elapsed time: 0.01074 (s)
+# encode3 rate: 58.45 (GB / sec) 
+Decode elapsed time: 0.00227 (s)
+# decode3 rate: 276.59 (GB / sec) 256
+BENCH_START:CESM:CLDLIQ_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=6.046e-09 nrmse=1.161e-05 maxe=5.845e-07 psnr=92.68
+Encode elapsed time: 0.01158 (s)
+# encode3 rate: 54.19 (GB / sec) 
+Decode elapsed time: 0.00264 (s)
+# decode3 rate: 237.40 (GB / sec) 512
+BENCH_START:CESM:CLDLIQ_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=3.576e-08 nrmse=6.869e-05 maxe=3.923e-06 psnr=77.24
+Encode elapsed time: 0.01085 (s)
+# encode3 rate: 57.85 (GB / sec) 
+Decode elapsed time: 0.00233 (s)
+# decode3 rate: 269.79 (GB / sec) 341
+BENCH_START:CESM:CLDLIQ_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=8.432e-08 nrmse=0.000162 maxe=9.7e-06 psnr=69.79
+Encode elapsed time: 0.01172 (s)
+# encode3 rate: 53.56 (GB / sec) 
+Decode elapsed time: 0.00207 (s)
+# decode3 rate: 303.92 (GB / sec) 256
+BENCH_START:CESM:CLOUD_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=3.848e-05 nrmse=3.991e-05 maxe=0.002934 psnr=81.96
+Encode elapsed time: 0.01121 (s)
+# encode3 rate: 55.99 (GB / sec) 
+Decode elapsed time: 0.00266 (s)
+# decode3 rate: 236.15 (GB / sec) 512
+BENCH_START:CESM:CLOUD_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.0002299 nrmse=0.0002385 maxe=0.01709 psnr=66.43
+Encode elapsed time: 0.01070 (s)
+# encode3 rate: 58.63 (GB / sec) 
+Decode elapsed time: 0.00234 (s)
+# decode3 rate: 267.71 (GB / sec) 341
+BENCH_START:CESM:CLOUD_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.0005423 nrmse=0.0005625 maxe=0.03931 psnr=58.98
+Encode elapsed time: 0.00990 (s)
+# encode3 rate: 63.37 (GB / sec) 
+Decode elapsed time: 0.00209 (s)
+# decode3 rate: 299.74 (GB / sec) 256
+BENCH_START:CESM:CMFDQR_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=3.063e-13 nrmse=8.667e-06 maxe=4.592e-11 psnr=95.22
+Encode elapsed time: 0.01017 (s)
+# encode3 rate: 61.74 (GB / sec) 
+Decode elapsed time: 0.00230 (s)
+# decode3 rate: 272.37 (GB / sec) 512
+BENCH_START:CESM:CMFDQR_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=1.847e-12 nrmse=5.226e-05 maxe=2.687e-10 psnr=79.62
+Encode elapsed time: 0.00979 (s)
+# encode3 rate: 64.09 (GB / sec) 
+Decode elapsed time: 0.00204 (s)
+# decode3 rate: 307.24 (GB / sec) 341
+BENCH_START:CESM:CMFDQR_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=4.447e-12 nrmse=0.0001259 maxe=5.164e-10 psnr=71.98
+Encode elapsed time: 0.00929 (s)
+# encode3 rate: 67.58 (GB / sec) 
+Decode elapsed time: 0.00184 (s)
+# decode3 rate: 340.87 (GB / sec) 256
+BENCH_START:CESM:CMFDQ_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=2.734e-12 nrmse=1.196e-05 maxe=4.309e-10 psnr=92.43
+Encode elapsed time: 0.01041 (s)
+# encode3 rate: 60.28 (GB / sec) 
+Decode elapsed time: 0.00250 (s)
+# decode3 rate: 251.03 (GB / sec) 512
+BENCH_START:CESM:CMFDQ_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=1.612e-11 nrmse=7.049e-05 maxe=2.203e-09 psnr=77.02
+Encode elapsed time: 0.00975 (s)
+# encode3 rate: 64.37 (GB / sec) 
+Decode elapsed time: 0.00222 (s)
+# decode3 rate: 282.45 (GB / sec) 341
+BENCH_START:CESM:CMFDQ_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=3.828e-11 nrmse=0.0001674 maxe=5.845e-09 psnr=69.50
+Encode elapsed time: 0.01004 (s)
+# encode3 rate: 62.52 (GB / sec) 
+Decode elapsed time: 0.00202 (s)
+# decode3 rate: 310.35 (GB / sec) 256
+BENCH_START:CESM:CMFDT_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=4.704e-09 nrmse=1.064e-05 maxe=7.227e-07 psnr=93.44
+Encode elapsed time: 0.01016 (s)
+# encode3 rate: 61.77 (GB / sec) 
+Decode elapsed time: 0.00247 (s)
+# decode3 rate: 254.31 (GB / sec) 512
+BENCH_START:CESM:CMFDT_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=2.759e-08 nrmse=6.239e-05 maxe=4.111e-06 psnr=78.08
+Encode elapsed time: 0.00976 (s)
+# encode3 rate: 64.32 (GB / sec) 
+Decode elapsed time: 0.00218 (s)
+# decode3 rate: 287.92 (GB / sec) 341
+BENCH_START:CESM:CMFDT_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=6.605e-08 nrmse=0.0001494 maxe=7.902e-06 psnr=70.49
+Encode elapsed time: 0.00929 (s)
+# encode3 rate: 67.54 (GB / sec) 
+Decode elapsed time: 0.00196 (s)
+# decode3 rate: 320.58 (GB / sec) 256
+BENCH_START:CESM:CONCLD_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=6.134e-06 nrmse=1.251e-05 maxe=0.0007802 psnr=92.03
+Encode elapsed time: 0.01063 (s)
+# encode3 rate: 59.04 (GB / sec) 
+Decode elapsed time: 0.00249 (s)
+# decode3 rate: 252.12 (GB / sec) 512
+BENCH_START:CESM:CONCLD_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=3.635e-05 nrmse=7.415e-05 maxe=0.004408 psnr=76.58
+Encode elapsed time: 0.01051 (s)
+# encode3 rate: 59.70 (GB / sec) 
+Decode elapsed time: 0.00223 (s)
+# decode3 rate: 280.85 (GB / sec) 341
+BENCH_START:CESM:CONCLD_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=8.822e-05 nrmse=0.00018 maxe=0.01101 psnr=68.88
+Encode elapsed time: 0.00932 (s)
+# encode3 rate: 67.31 (GB / sec) 
+Decode elapsed time: 0.00196 (s)
+# decode3 rate: 320.02 (GB / sec) 256
+BENCH_START:CESM:DCQ_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=3.745e-12 nrmse=1.344e-05 maxe=6.479e-10 psnr=91.41
+Encode elapsed time: 0.01176 (s)
+# encode3 rate: 53.39 (GB / sec) 
+Decode elapsed time: 0.00300 (s)
+# decode3 rate: 209.06 (GB / sec) 512
+BENCH_START:CESM:DCQ_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=2.215e-11 nrmse=7.952e-05 maxe=2.519e-09 psnr=75.97
+Encode elapsed time: 0.01099 (s)
+# encode3 rate: 57.11 (GB / sec) 
+Decode elapsed time: 0.00263 (s)
+# decode3 rate: 238.83 (GB / sec) 341
+BENCH_START:CESM:DCQ_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=5.213e-11 nrmse=0.0001871 maxe=6.598e-09 psnr=68.54
+Encode elapsed time: 0.01029 (s)
+# encode3 rate: 60.99 (GB / sec) 
+Decode elapsed time: 0.00235 (s)
+# decode3 rate: 267.35 (GB / sec) 256
+BENCH_START:CESM:DTCOND_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=6.334e-09 nrmse=1.088e-05 maxe=7.926e-07 psnr=93.25
+Encode elapsed time: 0.01146 (s)
+# encode3 rate: 54.75 (GB / sec) 
+Decode elapsed time: 0.00290 (s)
+# decode3 rate: 216.15 (GB / sec) 512
+BENCH_START:CESM:DTCOND_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=3.808e-08 nrmse=6.541e-05 maxe=5.25e-06 psnr=77.67
+Encode elapsed time: 0.01171 (s)
+# encode3 rate: 53.60 (GB / sec) 
+Decode elapsed time: 0.00256 (s)
+# decode3 rate: 245.40 (GB / sec) 341
+BENCH_START:CESM:DTCOND_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=8.961e-08 nrmse=0.0001539 maxe=1.01e-05 psnr=70.23
+Encode elapsed time: 0.01057 (s)
+# encode3 rate: 59.40 (GB / sec) 
+Decode elapsed time: 0.00229 (s)
+# decode3 rate: 274.15 (GB / sec) 256
+BENCH_START:CESM:DTV_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=5.25e-09 nrmse=3.586e-06 maxe=1.31e-06 psnr=102.89
+Encode elapsed time: 0.01214 (s)
+# encode3 rate: 51.70 (GB / sec) 
+Decode elapsed time: 0.00293 (s)
+# decode3 rate: 213.90 (GB / sec) 512
+BENCH_START:CESM:DTV_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=3.4e-08 nrmse=2.322e-05 maxe=1.077e-05 psnr=86.66
+Encode elapsed time: 0.01110 (s)
+# encode3 rate: 56.56 (GB / sec) 
+Decode elapsed time: 0.00245 (s)
+# decode3 rate: 255.84 (GB / sec) 341
+BENCH_START:CESM:DTV_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=8.802e-08 nrmse=6.012e-05 maxe=2.786e-05 psnr=78.40
+Encode elapsed time: 0.00987 (s)
+# encode3 rate: 63.61 (GB / sec) 
+Decode elapsed time: 0.00209 (s)
+# decode3 rate: 300.32 (GB / sec) 256
+BENCH_START:CESM:FICE_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=4.762e-06 nrmse=4.762e-06 maxe=0.0007898 psnr=100.42
+Encode elapsed time: 0.01054 (s)
+# encode3 rate: 59.57 (GB / sec) 
+Decode elapsed time: 0.00243 (s)
+# decode3 rate: 258.30 (GB / sec) 512
+BENCH_START:CESM:FICE_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=3.001e-05 nrmse=3.001e-05 maxe=0.003635 psnr=84.43
+Encode elapsed time: 0.00980 (s)
+# encode3 rate: 64.06 (GB / sec) 
+Decode elapsed time: 0.00208 (s)
+# decode3 rate: 301.96 (GB / sec) 341
+BENCH_START:CESM:FICE_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=9.451e-05 nrmse=9.451e-05 maxe=0.009301 psnr=74.47
+Encode elapsed time: 0.00931 (s)
+# encode3 rate: 67.42 (GB / sec) 
+Decode elapsed time: 0.00188 (s)
+# decode3 rate: 333.88 (GB / sec) 256
+BENCH_START:CESM:GCLDLWP_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.004855 nrmse=2.902e-05 maxe=0.4181 psnr=84.73
+Encode elapsed time: 0.01168 (s)
+# encode3 rate: 53.74 (GB / sec) 
+Decode elapsed time: 0.00299 (s)
+# decode3 rate: 210.20 (GB / sec) 512
+BENCH_START:CESM:GCLDLWP_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.02852 nrmse=0.0001704 maxe=2.992 psnr=69.35
+Encode elapsed time: 0.01098 (s)
+# encode3 rate: 57.18 (GB / sec) 
+Decode elapsed time: 0.00261 (s)
+# decode3 rate: 240.05 (GB / sec) 341
+BENCH_START:CESM:GCLDLWP_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.06664 nrmse=0.0003983 maxe=7.665 psnr=61.98
+Encode elapsed time: 0.01026 (s)
+# encode3 rate: 61.18 (GB / sec) 
+Decode elapsed time: 0.00228 (s)
+# decode3 rate: 274.89 (GB / sec) 256
+BENCH_START:CESM:ICIMR_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=9.792e-08 nrmse=1.31e-05 maxe=1.986e-05 psnr=91.64
+Encode elapsed time: 0.01171 (s)
+# encode3 rate: 53.59 (GB / sec) 
+Decode elapsed time: 0.00301 (s)
+# decode3 rate: 208.27 (GB / sec) 512
+BENCH_START:CESM:ICIMR_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=5.91e-07 nrmse=7.904e-05 maxe=0.0001131 psnr=76.02
+Encode elapsed time: 0.01111 (s)
+# encode3 rate: 56.50 (GB / sec) 
+Decode elapsed time: 0.00268 (s)
+# decode3 rate: 234.08 (GB / sec) 341
+BENCH_START:CESM:ICIMR_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=1.395e-06 nrmse=0.0001866 maxe=0.0002711 psnr=68.56
+Encode elapsed time: 0.01057 (s)
+# encode3 rate: 59.37 (GB / sec) 
+Decode elapsed time: 0.00241 (s)
+# decode3 rate: 260.09 (GB / sec) 256
+BENCH_START:CESM:ICLDIWP_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.04462 nrmse=2.48e-05 maxe=9.512 psnr=86.09
+Encode elapsed time: 0.01369 (s)
+# encode3 rate: 45.86 (GB / sec) 
+Decode elapsed time: 0.00307 (s)
+# decode3 rate: 204.69 (GB / sec) 512
+BENCH_START:CESM:ICLDIWP_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.2672 nrmse=0.0001485 maxe=64.07 psnr=70.54
+Encode elapsed time: 0.01163 (s)
+# encode3 rate: 53.96 (GB / sec) 
+Decode elapsed time: 0.00273 (s)
+# decode3 rate: 229.57 (GB / sec) 341
+BENCH_START:CESM:ICLDIWP_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.621 nrmse=0.0003452 maxe=160.9 psnr=63.22
+Encode elapsed time: 0.01072 (s)
+# encode3 rate: 58.54 (GB / sec) 
+Decode elapsed time: 0.00247 (s)
+# decode3 rate: 254.45 (GB / sec) 256
+BENCH_START:CESM:ICLDTWP_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.2251 nrmse=2.58e-05 maxe=44.4 psnr=85.75
+Encode elapsed time: 0.01187 (s)
+# encode3 rate: 52.87 (GB / sec) 
+Decode elapsed time: 0.00307 (s)
+# decode3 rate: 204.76 (GB / sec) 512
+BENCH_START:CESM:ICLDTWP_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=1.358 nrmse=0.0001557 maxe=212.4 psnr=70.13
+Encode elapsed time: 0.01129 (s)
+# encode3 rate: 55.57 (GB / sec) 
+Decode elapsed time: 0.00273 (s)
+# decode3 rate: 230.26 (GB / sec) 341
+BENCH_START:CESM:ICLDTWP_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=3.139 nrmse=0.0003599 maxe=694.3 psnr=62.86
+Encode elapsed time: 0.01050 (s)
+# encode3 rate: 59.79 (GB / sec) 
+Decode elapsed time: 0.00245 (s)
+# decode3 rate: 255.76 (GB / sec) 256
+BENCH_START:CESM:ICWMR_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=4.854e-07 nrmse=2.274e-05 maxe=7.692e-05 psnr=86.84
+Encode elapsed time: 0.01202 (s)
+# encode3 rate: 52.21 (GB / sec) 
+Decode elapsed time: 0.00276 (s)
+# decode3 rate: 227.81 (GB / sec) 512
+BENCH_START:CESM:ICWMR_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=2.922e-06 nrmse=0.0001369 maxe=0.0004003 psnr=71.25
+Encode elapsed time: 0.01085 (s)
+# encode3 rate: 57.83 (GB / sec) 
+Decode elapsed time: 0.00247 (s)
+# decode3 rate: 253.98 (GB / sec) 341
+BENCH_START:CESM:ICWMR_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=6.811e-06 nrmse=0.0003191 maxe=0.0008072 psnr=63.90
+Encode elapsed time: 0.01126 (s)
+# encode3 rate: 55.73 (GB / sec) 
+Decode elapsed time: 0.00220 (s)
+# decode3 rate: 285.93 (GB / sec) 256
+BENCH_START:CESM:OMEGAT_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.003192 nrmse=3.07e-06 maxe=0.4055 psnr=104.24
+Encode elapsed time: 0.01201 (s)
+# encode3 rate: 52.25 (GB / sec) 
+Decode elapsed time: 0.00330 (s)
+# decode3 rate: 189.93 (GB / sec) 512
+BENCH_START:CESM:OMEGAT_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.01972 nrmse=1.897e-05 maxe=2.398 psnr=88.42
+Encode elapsed time: 0.01107 (s)
+# encode3 rate: 56.70 (GB / sec) 
+Decode elapsed time: 0.00291 (s)
+# decode3 rate: 215.55 (GB / sec) 341
+BENCH_START:CESM:OMEGAT_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.04938 nrmse=4.75e-05 maxe=5.478 psnr=80.45
+Encode elapsed time: 0.01059 (s)
+# encode3 rate: 59.25 (GB / sec) 
+Decode elapsed time: 0.00259 (s)
+# decode3 rate: 242.21 (GB / sec) 256
+BENCH_START:CESM:OMEGA_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=1.212e-05 nrmse=2.966e-06 maxe=0.00202 psnr=104.54
+Encode elapsed time: 0.01189 (s)
+# encode3 rate: 52.77 (GB / sec) 
+Decode elapsed time: 0.00330 (s)
+# decode3 rate: 190.12 (GB / sec) 512
+BENCH_START:CESM:OMEGA_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=7.48e-05 nrmse=1.83e-05 maxe=0.008764 psnr=88.73
+Encode elapsed time: 0.01096 (s)
+# encode3 rate: 57.25 (GB / sec) 
+Decode elapsed time: 0.00291 (s)
+# decode3 rate: 215.85 (GB / sec) 341
+BENCH_START:CESM:OMEGA_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.0001869 nrmse=4.574e-05 maxe=0.02089 psnr=80.77
+Encode elapsed time: 0.01028 (s)
+# encode3 rate: 61.04 (GB / sec) 
+Decode elapsed time: 0.00259 (s)
+# decode3 rate: 242.19 (GB / sec) 256
+BENCH_START:CESM:QC_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=1.314e-12 nrmse=1.34e-05 maxe=2.121e-10 psnr=91.44
+Encode elapsed time: 0.01021 (s)
+# encode3 rate: 61.49 (GB / sec) 
+Decode elapsed time: 0.00230 (s)
+# decode3 rate: 272.90 (GB / sec) 512
+BENCH_START:CESM:QC_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=7.695e-12 nrmse=7.852e-05 maxe=1.109e-09 psnr=76.08
+Encode elapsed time: 0.01068 (s)
+# encode3 rate: 58.76 (GB / sec) 
+Decode elapsed time: 0.00208 (s)
+# decode3 rate: 302.38 (GB / sec) 341
+BENCH_START:CESM:QC_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=1.822e-11 nrmse=0.0001859 maxe=2.347e-09 psnr=68.59
+Encode elapsed time: 0.00904 (s)
+# encode3 rate: 69.40 (GB / sec) 
+Decode elapsed time: 0.00183 (s)
+# decode3 rate: 342.33 (GB / sec) 256
+BENCH_START:CESM:QRL_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=2.797e-09 nrmse=8.188e-06 maxe=3.874e-07 psnr=95.72
+Encode elapsed time: 0.01252 (s)
+# encode3 rate: 50.11 (GB / sec) 
+Decode elapsed time: 0.00307 (s)
+# decode3 rate: 204.39 (GB / sec) 512
+BENCH_START:CESM:QRL_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=1.685e-08 nrmse=4.934e-05 maxe=2.002e-06 psnr=80.12
+Encode elapsed time: 0.01142 (s)
+# encode3 rate: 54.98 (GB / sec) 
+Decode elapsed time: 0.00262 (s)
+# decode3 rate: 239.95 (GB / sec) 341
+BENCH_START:CESM:QRL_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=4.058e-08 nrmse=0.0001188 maxe=6.114e-06 psnr=72.48
+Encode elapsed time: 0.01056 (s)
+# encode3 rate: 59.44 (GB / sec) 
+Decode elapsed time: 0.00228 (s)
+# decode3 rate: 274.71 (GB / sec) 256
+BENCH_START:CESM:QRS_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=9.689e-10 nrmse=1.408e-05 maxe=5.915e-08 psnr=91.01
+Encode elapsed time: 0.01198 (s)
+# encode3 rate: 52.39 (GB / sec) 
+Decode elapsed time: 0.00289 (s)
+# decode3 rate: 217.09 (GB / sec) 512
+BENCH_START:CESM:QRS_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=5.743e-09 nrmse=8.346e-05 maxe=3.996e-07 psnr=75.55
+Encode elapsed time: 0.01098 (s)
+# encode3 rate: 57.18 (GB / sec) 
+Decode elapsed time: 0.00251 (s)
+# decode3 rate: 250.43 (GB / sec) 341
+BENCH_START:CESM:QRS_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=1.361e-08 nrmse=0.0001978 maxe=9.644e-07 psnr=68.06
+Encode elapsed time: 0.00985 (s)
+# encode3 rate: 63.69 (GB / sec) 
+Decode elapsed time: 0.00212 (s)
+# decode3 rate: 295.93 (GB / sec) 256
+BENCH_START:CESM:Q_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=6.086e-08 nrmse=3.08e-06 maxe=4.854e-06 psnr=104.21
+Encode elapsed time: 0.01232 (s)
+# encode3 rate: 50.95 (GB / sec) 
+Decode elapsed time: 0.00302 (s)
+# decode3 rate: 208.14 (GB / sec) 512
+BENCH_START:CESM:Q_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=3.696e-07 nrmse=1.871e-05 maxe=2.291e-05 psnr=88.54
+Encode elapsed time: 0.01128 (s)
+# encode3 rate: 55.62 (GB / sec) 
+Decode elapsed time: 0.00246 (s)
+# decode3 rate: 255.08 (GB / sec) 341
+BENCH_START:CESM:Q_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=1.026e-06 nrmse=5.195e-05 maxe=7.609e-05 psnr=79.67
+Encode elapsed time: 0.01212 (s)
+# encode3 rate: 51.80 (GB / sec) 
+Decode elapsed time: 0.00208 (s)
+# decode3 rate: 302.22 (GB / sec) 256
+BENCH_START:CESM:RELHUM_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.001942 nrmse=1.95e-05 maxe=0.1067 psnr=88.18
+Encode elapsed time: 0.01253 (s)
+# encode3 rate: 50.07 (GB / sec) 
+Decode elapsed time: 0.00301 (s)
+# decode3 rate: 208.19 (GB / sec) 512
+BENCH_START:CESM:RELHUM_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.01128 nrmse=0.0001132 maxe=0.8267 psnr=72.90
+Encode elapsed time: 0.01120 (s)
+# encode3 rate: 56.03 (GB / sec) 
+Decode elapsed time: 0.00250 (s)
+# decode3 rate: 251.46 (GB / sec) 341
+BENCH_START:CESM:RELHUM_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.02749 nrmse=0.000276 maxe=1.404 psnr=65.16
+Encode elapsed time: 0.01009 (s)
+# encode3 rate: 62.22 (GB / sec) 
+Decode elapsed time: 0.00216 (s)
+# decode3 rate: 290.22 (GB / sec) 256
+BENCH_START:CESM:T_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.000183 nrmse=1.497e-06 maxe=0.009781 psnr=110.47
+Encode elapsed time: 0.01282 (s)
+# encode3 rate: 48.95 (GB / sec) 
+Decode elapsed time: 0.00320 (s)
+# decode3 rate: 196.15 (GB / sec) 512
+BENCH_START:CESM:T_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.001148 nrmse=9.39e-06 maxe=0.05896 psnr=94.53
+Encode elapsed time: 0.01125 (s)
+# encode3 rate: 55.81 (GB / sec) 
+Decode elapsed time: 0.00260 (s)
+# decode3 rate: 241.31 (GB / sec) 341
+BENCH_START:CESM:T_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.003902 nrmse=3.192e-05 maxe=0.1529 psnr=83.90
+Encode elapsed time: 0.01020 (s)
+# encode3 rate: 61.55 (GB / sec) 
+Decode elapsed time: 0.00221 (s)
+# decode3 rate: 283.95 (GB / sec) 256
+BENCH_START:CESM:UU_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.01154 nrmse=1.032e-06 maxe=0.7562 psnr=113.71
+Encode elapsed time: 0.01983 (s)
+# encode3 rate: 31.65 (GB / sec) 
+Decode elapsed time: 0.00299 (s)
+# decode3 rate: 210.16 (GB / sec) 512
+BENCH_START:CESM:UU_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.07105 nrmse=6.354e-06 maxe=6.208 psnr=97.92
+Encode elapsed time: 0.01108 (s)
+# encode3 rate: 56.64 (GB / sec) 
+Decode elapsed time: 0.00245 (s)
+# decode3 rate: 256.05 (GB / sec) 341
+BENCH_START:CESM:UU_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.2295 nrmse=2.052e-05 maxe=15.96 psnr=87.74
+Encode elapsed time: 0.00973 (s)
+# encode3 rate: 64.48 (GB / sec) 
+Decode elapsed time: 0.00208 (s)
+# decode3 rate: 302.27 (GB / sec) 256
+BENCH_START:CESM:U_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.0002659 nrmse=1.673e-06 maxe=0.01607 psnr=109.51
+Encode elapsed time: 0.01251 (s)
+# encode3 rate: 50.17 (GB / sec) 
+Decode elapsed time: 0.00304 (s)
+# decode3 rate: 206.14 (GB / sec) 512
+BENCH_START:CESM:U_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.001654 nrmse=1.041e-05 maxe=0.09555 psnr=93.63
+Encode elapsed time: 0.01074 (s)
+# encode3 rate: 58.44 (GB / sec) 
+Decode elapsed time: 0.00254 (s)
+# decode3 rate: 247.52 (GB / sec) 341
+BENCH_START:CESM:U_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.004982 nrmse=3.134e-05 maxe=0.2502 psnr=84.06
+Encode elapsed time: 0.01001 (s)
+# encode3 rate: 62.70 (GB / sec) 
+Decode elapsed time: 0.00216 (s)
+# decode3 rate: 290.54 (GB / sec) 256
+BENCH_START:CESM:VD01_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=3.188e-12 nrmse=4.42e-06 maxe=1.003e-09 psnr=101.07
+Encode elapsed time: 0.01190 (s)
+# encode3 rate: 52.76 (GB / sec) 
+Decode elapsed time: 0.00299 (s)
+# decode3 rate: 210.26 (GB / sec) 512
+BENCH_START:CESM:VD01_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=1.949e-11 nrmse=2.702e-05 maxe=4.261e-09 psnr=85.35
+Encode elapsed time: 0.01124 (s)
+# encode3 rate: 55.82 (GB / sec) 
+Decode elapsed time: 0.00252 (s)
+# decode3 rate: 248.73 (GB / sec) 341
+BENCH_START:CESM:VD01_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=4.842e-11 nrmse=6.714e-05 maxe=1.41e-08 psnr=77.44
+Encode elapsed time: 0.01016 (s)
+# encode3 rate: 61.78 (GB / sec) 
+Decode elapsed time: 0.00217 (s)
+# decode3 rate: 288.68 (GB / sec) 256
+BENCH_START:CESM:VQ_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=8.295e-07 nrmse=2.461e-06 maxe=9.186e-05 psnr=106.16
+Encode elapsed time: 0.01342 (s)
+# encode3 rate: 46.78 (GB / sec) 
+Decode elapsed time: 0.00309 (s)
+# decode3 rate: 202.98 (GB / sec) 512
+BENCH_START:CESM:VQ_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=5.133e-06 nrmse=1.523e-05 maxe=0.0004932 psnr=90.32
+Encode elapsed time: 0.01112 (s)
+# encode3 rate: 56.42 (GB / sec) 
+Decode elapsed time: 0.00261 (s)
+# decode3 rate: 240.66 (GB / sec) 341
+BENCH_START:CESM:VQ_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=1.397e-05 nrmse=4.144e-05 maxe=0.001251 psnr=81.63
+Encode elapsed time: 0.01001 (s)
+# encode3 rate: 62.72 (GB / sec) 
+Decode elapsed time: 0.00222 (s)
+# decode3 rate: 282.92 (GB / sec) 256
+BENCH_START:CESM:VT_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.05248 nrmse=1.899e-06 maxe=3.414 psnr=108.41
+Encode elapsed time: 0.01204 (s)
+# encode3 rate: 52.14 (GB / sec) 
+Decode elapsed time: 0.00310 (s)
+# decode3 rate: 202.21 (GB / sec) 512
+BENCH_START:CESM:VT_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.3144 nrmse=1.138e-05 maxe=18.17 psnr=92.86
+Encode elapsed time: 0.01079 (s)
+# encode3 rate: 58.16 (GB / sec) 
+Decode elapsed time: 0.00261 (s)
+# decode3 rate: 240.36 (GB / sec) 341
+BENCH_START:CESM:VT_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.8449 nrmse=3.057e-05 maxe=48.18 psnr=84.27
+Encode elapsed time: 0.01032 (s)
+# encode3 rate: 60.81 (GB / sec) 
+Decode elapsed time: 0.00224 (s)
+# decode3 rate: 280.14 (GB / sec) 256
+BENCH_START:CESM:VU_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.00544 nrmse=6.022e-07 maxe=0.4721 psnr=118.39
+Encode elapsed time: 0.01220 (s)
+# encode3 rate: 51.46 (GB / sec) 
+Decode elapsed time: 0.00309 (s)
+# decode3 rate: 203.38 (GB / sec) 512
+BENCH_START:CESM:VU_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.0327 nrmse=3.619e-06 maxe=4.11 psnr=102.81
+Encode elapsed time: 0.01064 (s)
+# encode3 rate: 59.00 (GB / sec) 
+Decode elapsed time: 0.00258 (s)
+# decode3 rate: 243.29 (GB / sec) 341
+BENCH_START:CESM:VU_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.08995 nrmse=9.957e-06 maxe=9.311 psnr=94.02
+Encode elapsed time: 0.00987 (s)
+# encode3 rate: 63.57 (GB / sec) 
+Decode elapsed time: 0.00220 (s)
+# decode3 rate: 285.18 (GB / sec) 256
+BENCH_START:CESM:VV_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.005184 nrmse=1.009e-06 maxe=0.7089 psnr=113.90
+Encode elapsed time: 0.01263 (s)
+# encode3 rate: 49.69 (GB / sec) 
+Decode elapsed time: 0.00305 (s)
+# decode3 rate: 205.58 (GB / sec) 512
+BENCH_START:CESM:VV_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.03171 nrmse=6.173e-06 maxe=5.351 psnr=98.17
+Encode elapsed time: 0.01083 (s)
+# encode3 rate: 57.94 (GB / sec) 
+Decode elapsed time: 0.00255 (s)
+# decode3 rate: 246.30 (GB / sec) 341
+BENCH_START:CESM:VV_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.08928 nrmse=1.738e-05 maxe=12.55 psnr=89.18
+Encode elapsed time: 0.01007 (s)
+# encode3 rate: 62.35 (GB / sec) 
+Decode elapsed time: 0.00219 (s)
+# decode3 rate: 286.96 (GB / sec) 256
+BENCH_START:CESM:V_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.0002216 nrmse=1.764e-06 maxe=0.01291 psnr=109.05
+Encode elapsed time: 0.01239 (s)
+# encode3 rate: 50.66 (GB / sec) 
+Decode elapsed time: 0.00310 (s)
+# decode3 rate: 202.52 (GB / sec) 512
+BENCH_START:CESM:V_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.001321 nrmse=1.051e-05 maxe=0.07156 psnr=93.54
+Encode elapsed time: 0.01208 (s)
+# encode3 rate: 51.95 (GB / sec) 
+Decode elapsed time: 0.00261 (s)
+# decode3 rate: 240.76 (GB / sec) 341
+BENCH_START:CESM:V_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.003542 nrmse=2.82e-05 maxe=0.155 psnr=84.97
+Encode elapsed time: 0.01057 (s)
+# encode3 rate: 59.40 (GB / sec) 
+Decode elapsed time: 0.00224 (s)
+# decode3 rate: 280.30 (GB / sec) 256
+BENCH_START:CESM:Z3_1_26_1800_3600.f32:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=0.003989 nrmse=1.022e-07 maxe=0.5728 psnr=133.79
+Encode elapsed time: 0.01284 (s)
+# encode3 rate: 48.89 (GB / sec) 
+Decode elapsed time: 0.00336 (s)
+# decode3 rate: 186.71 (GB / sec) 512
+BENCH_START:CESM:Z3_1_26_1800_3600.f32:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=0.02781 nrmse=7.123e-07 maxe=2.953 psnr=116.93
+Encode elapsed time: 0.01091 (s)
+# encode3 rate: 57.51 (GB / sec) 
+Decode elapsed time: 0.00260 (s)
+# decode3 rate: 241.35 (GB / sec) 341
+BENCH_START:CESM:Z3_1_26_1800_3600.f32:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=0.09705 nrmse=2.485e-06 maxe=8.576 psnr=106.07
+Encode elapsed time: 0.00971 (s)
+# encode3 rate: 64.64 (GB / sec) 
+Decode elapsed time: 0.00214 (s)
+# decode3 rate: 293.23 (GB / sec) 256
+BENCH_START:NYX:baryon_density.f32:4
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=134217728 ratio=4 rate=8 rmse=0.1678 nrmse=1.449e-06 maxe=402.5 psnr=110.76
+Encode elapsed time: 0.01053 (s)
+# encode3 rate: 47.49 (GB / sec) 
+Decode elapsed time: 0.00299 (s)
+# decode3 rate: 167.22 (GB / sec) 512
+BENCH_START:NYX:baryon_density.f32:6
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=89391104 ratio=6.01 rate=5.328 rmse=1.118 nrmse=9.649e-06 maxe=2937 psnr=94.29
+Encode elapsed time: 0.01034 (s)
+# encode3 rate: 48.37 (GB / sec) 
+Decode elapsed time: 0.00283 (s)
+# decode3 rate: 176.62 (GB / sec) 341
+BENCH_START:NYX:baryon_density.f32:8
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=67108864 ratio=8 rate=4 rmse=2.638 nrmse=2.276e-05 maxe=8071 psnr=86.83
+Encode elapsed time: 0.01001 (s)
+# encode3 rate: 49.97 (GB / sec) 
+Decode elapsed time: 0.00269 (s)
+# decode3 rate: 186.03 (GB / sec) 256
+BENCH_START:NYX:dark_matter_density.f32:4
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=134217728 ratio=4 rate=8 rmse=0.04165 nrmse=3.023e-06 maxe=41.29 psnr=104.37
+Encode elapsed time: 0.01309 (s)
+# encode3 rate: 38.21 (GB / sec) 
+Decode elapsed time: 0.00290 (s)
+# decode3 rate: 172.17 (GB / sec) 512
+BENCH_START:NYX:dark_matter_density.f32:6
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=89391104 ratio=6.01 rate=5.328 rmse=0.2622 nrmse=1.903e-05 maxe=248 psnr=88.39
+Encode elapsed time: 0.00989 (s)
+# encode3 rate: 50.56 (GB / sec) 
+Decode elapsed time: 0.00266 (s)
+# decode3 rate: 187.97 (GB / sec) 341
+BENCH_START:NYX:dark_matter_density.f32:8
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=67108864 ratio=8 rate=4 rmse=0.6555 nrmse=4.757e-05 maxe=696.1 psnr=80.43
+Encode elapsed time: 0.00987 (s)
+# encode3 rate: 50.67 (GB / sec) 
+Decode elapsed time: 0.00256 (s)
+# decode3 rate: 195.22 (GB / sec) 256
+BENCH_START:NYX:temperature.f32:4
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=134217728 ratio=4 rate=8 rmse=41.1 nrmse=8.598e-06 maxe=3.657e+04 psnr=95.29
+Encode elapsed time: 0.01059 (s)
+# encode3 rate: 47.24 (GB / sec) 
+Decode elapsed time: 0.00311 (s)
+# decode3 rate: 160.96 (GB / sec) 512
+BENCH_START:NYX:temperature.f32:6
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=89391104 ratio=6.01 rate=5.328 rmse=259.5 nrmse=5.428e-05 maxe=2.108e+05 psnr=79.29
+Encode elapsed time: 0.01037 (s)
+# encode3 rate: 48.22 (GB / sec) 
+Decode elapsed time: 0.00295 (s)
+# decode3 rate: 169.67 (GB / sec) 341
+BENCH_START:NYX:temperature.f32:8
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=67108864 ratio=8 rate=4 rmse=649.4 nrmse=0.0001358 maxe=6.069e+05 psnr=71.32
+Encode elapsed time: 0.01008 (s)
+# encode3 rate: 49.61 (GB / sec) 
+Decode elapsed time: 0.00282 (s)
+# decode3 rate: 177.56 (GB / sec) 256
+BENCH_START:NYX:velocity_x.f32:4
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=134217728 ratio=4 rate=8 rmse=707 nrmse=8.592e-06 maxe=2.394e+05 psnr=95.30
+Encode elapsed time: 0.01054 (s)
+# encode3 rate: 47.42 (GB / sec) 
+Decode elapsed time: 0.00331 (s)
+# decode3 rate: 151.10 (GB / sec) 512
+BENCH_START:NYX:velocity_x.f32:6
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=89391104 ratio=6.01 rate=5.328 rmse=4469 nrmse=5.432e-05 maxe=1.162e+06 psnr=79.28
+Encode elapsed time: 0.01028 (s)
+# encode3 rate: 48.65 (GB / sec) 
+Decode elapsed time: 0.00316 (s)
+# decode3 rate: 158.38 (GB / sec) 341
+BENCH_START:NYX:velocity_x.f32:8
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=67108864 ratio=8 rate=4 rmse=1.088e+04 nrmse=0.0001322 maxe=2.94e+06 psnr=71.55
+Encode elapsed time: 0.01026 (s)
+# encode3 rate: 48.73 (GB / sec) 
+Decode elapsed time: 0.00303 (s)
+# decode3 rate: 165.20 (GB / sec) 256
+BENCH_START:NYX:velocity_y.f32:4
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=134217728 ratio=4 rate=8 rmse=679.1 nrmse=6.761e-06 maxe=2.086e+05 psnr=97.38
+Encode elapsed time: 0.01068 (s)
+# encode3 rate: 46.82 (GB / sec) 
+Decode elapsed time: 0.00331 (s)
+# decode3 rate: 151.08 (GB / sec) 512
+BENCH_START:NYX:velocity_y.f32:6
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=89391104 ratio=6.01 rate=5.328 rmse=4306 nrmse=4.287e-05 maxe=1.282e+06 psnr=81.34
+Encode elapsed time: 0.01030 (s)
+# encode3 rate: 48.53 (GB / sec) 
+Decode elapsed time: 0.00315 (s)
+# decode3 rate: 158.66 (GB / sec) 341
+BENCH_START:NYX:velocity_y.f32:8
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=67108864 ratio=8 rate=4 rmse=1.052e+04 nrmse=0.0001047 maxe=3.664e+06 psnr=73.58
+Encode elapsed time: 0.01009 (s)
+# encode3 rate: 49.54 (GB / sec) 
+Decode elapsed time: 0.00303 (s)
+# decode3 rate: 164.92 (GB / sec) 256
+BENCH_START:NYX:velocity_z.f32:4
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=134217728 ratio=4 rate=8 rmse=665.3 nrmse=9.198e-06 maxe=2.116e+05 psnr=94.71
+Encode elapsed time: 0.01070 (s)
+# encode3 rate: 46.75 (GB / sec) 
+Decode elapsed time: 0.00343 (s)
+# decode3 rate: 145.71 (GB / sec) 512
+BENCH_START:NYX:velocity_z.f32:6
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=89391104 ratio=6.01 rate=5.328 rmse=4225 nrmse=5.842e-05 maxe=1.421e+06 psnr=78.65
+Encode elapsed time: 0.01068 (s)
+# encode3 rate: 46.82 (GB / sec) 
+Decode elapsed time: 0.00328 (s)
+# decode3 rate: 152.44 (GB / sec) 341
+BENCH_START:NYX:velocity_z.f32:8
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=67108864 ratio=8 rate=4 rmse=1.026e+04 nrmse=0.0001418 maxe=3.694e+06 psnr=70.94
+Encode elapsed time: 0.01041 (s)
+# encode3 rate: 48.03 (GB / sec) 
+Decode elapsed time: 0.00315 (s)
+# decode3 rate: 158.59 (GB / sec) 256
+BENCH_START:HACC:vx.f32:4
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=1073726488 ratio=4 rate=8 rmse=9.377 nrmse=0.001231 maxe=425.6 psnr=52.17
+Encode elapsed time: 0.03761 (s)
+# encode1 rate: 106.35 (GB / sec) 32
+Decode elapsed time: 0.02404 (s)
+# decode1 rate: 166.40 (GB / sec) 32
+BENCH_START:HACC:vx.f32:6
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=704633008 ratio=6.1 rate=5.25 rmse=64.41 nrmse=0.008458 maxe=2985 psnr=35.43
+Encode elapsed time: 0.03747 (s)
+# encode1 rate: 106.74 (GB / sec) 21
+Decode elapsed time: 0.01647 (s)
+# decode1 rate: 242.92 (GB / sec) 21
+BENCH_START:HACC:vx.f32:8
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=536863248 ratio=8 rate=4 rmse=141.6 nrmse=0.01859 maxe=6144 psnr=28.59
+Encode elapsed time: 0.02430 (s)
+# encode1 rate: 164.62 (GB / sec) 16
+Decode elapsed time: 0.01087 (s)
+# decode1 rate: 367.98 (GB / sec) 16
+BENCH_START:HACC:vy.f32:4
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=1073726488 ratio=4 rate=8 rmse=9.627 nrmse=0.001222 maxe=438.6 psnr=52.24
+Encode elapsed time: 0.03762 (s)
+# encode1 rate: 106.33 (GB / sec) 32
+Decode elapsed time: 0.02400 (s)
+# decode1 rate: 166.65 (GB / sec) 32
+BENCH_START:HACC:vy.f32:6
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=704633008 ratio=6.1 rate=5.25 rmse=66.09 nrmse=0.00839 maxe=2922 psnr=35.50
+Encode elapsed time: 0.03754 (s)
+# encode1 rate: 106.56 (GB / sec) 21
+Decode elapsed time: 0.01634 (s)
+# decode1 rate: 244.82 (GB / sec) 21
+BENCH_START:HACC:vy.f32:8
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=536863248 ratio=8 rate=4 rmse=145.4 nrmse=0.01846 maxe=1.128e+04 psnr=28.65
+Encode elapsed time: 0.02432 (s)
+# encode1 rate: 164.47 (GB / sec) 16
+Decode elapsed time: 0.01078 (s)
+# decode1 rate: 370.93 (GB / sec) 16
+BENCH_START:HACC:vz.f32:4
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=1073726488 ratio=4 rate=8 rmse=9.835 nrmse=0.001225 maxe=445.5 psnr=52.22
+Encode elapsed time: 0.03765 (s)
+# encode1 rate: 106.25 (GB / sec) 32
+Decode elapsed time: 0.02413 (s)
+# decode1 rate: 165.74 (GB / sec) 32
+BENCH_START:HACC:vz.f32:6
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=704633008 ratio=6.1 rate=5.25 rmse=67.48 nrmse=0.008403 maxe=3115 psnr=35.49
+Encode elapsed time: 0.03697 (s)
+# encode1 rate: 108.19 (GB / sec) 21
+Decode elapsed time: 0.01646 (s)
+# decode1 rate: 242.99 (GB / sec) 21
+BENCH_START:HACC:vz.f32:8
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=536863248 ratio=8 rate=4 rmse=148.8 nrmse=0.01854 maxe=6144 psnr=28.62
+Encode elapsed time: 0.02446 (s)
+# encode1 rate: 163.50 (GB / sec) 16
+Decode elapsed time: 0.01081 (s)
+# decode1 rate: 370.05 (GB / sec) 16
+BENCH_START:HACC:xx.f32:4
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=1073726488 ratio=4 rate=8 rmse=0.1437 nrmse=0.0005614 maxe=12 psnr=58.99
+Encode elapsed time: 0.03682 (s)
+# encode1 rate: 108.62 (GB / sec) 32
+Decode elapsed time: 0.01820 (s)
+# decode1 rate: 219.76 (GB / sec) 32
+BENCH_START:HACC:xx.f32:6
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=704633008 ratio=6.1 rate=5.25 rmse=3.982 nrmse=0.01556 maxe=128 psnr=30.14
+Encode elapsed time: 0.03355 (s)
+# encode1 rate: 119.21 (GB / sec) 21
+Decode elapsed time: 0.01024 (s)
+# decode1 rate: 390.53 (GB / sec) 21
+BENCH_START:HACC:xx.f32:8
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=536863248 ratio=8 rate=4 rmse=15.79 nrmse=0.06169 maxe=768 psnr=18.18
+Encode elapsed time: 0.02151 (s)
+# encode1 rate: 185.94 (GB / sec) 16
+Decode elapsed time: 0.00766 (s)
+# decode1 rate: 522.29 (GB / sec) 16
+BENCH_START:HACC:yy.f32:4
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=1073726488 ratio=4 rate=8 rmse=0.1677 nrmse=0.0006552 maxe=16 psnr=57.65
+Encode elapsed time: 0.03705 (s)
+# encode1 rate: 107.97 (GB / sec) 32
+Decode elapsed time: 0.01834 (s)
+# decode1 rate: 218.12 (GB / sec) 32
+BENCH_START:HACC:yy.f32:6
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=704633008 ratio=6.1 rate=5.25 rmse=4.079 nrmse=0.01593 maxe=145.3 psnr=29.93
+Encode elapsed time: 0.03342 (s)
+# encode1 rate: 119.68 (GB / sec) 21
+Decode elapsed time: 0.01011 (s)
+# decode1 rate: 395.80 (GB / sec) 21
+BENCH_START:HACC:yy.f32:8
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=536863248 ratio=8 rate=4 rmse=16.22 nrmse=0.06338 maxe=383.9 psnr=17.94
+Encode elapsed time: 0.02122 (s)
+# encode1 rate: 188.48 (GB / sec) 16
+Decode elapsed time: 0.00751 (s)
+# decode1 rate: 532.75 (GB / sec) 16
+BENCH_START:HACC:zz.f32:4
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=1073726488 ratio=4 rate=8 rmse=0.2128 nrmse=0.0008314 maxe=16.26 psnr=55.58
+Encode elapsed time: 0.03715 (s)
+# encode1 rate: 107.68 (GB / sec) 32
+Decode elapsed time: 0.01869 (s)
+# decode1 rate: 214.02 (GB / sec) 32
+BENCH_START:HACC:zz.f32:6
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=704633008 ratio=6.1 rate=5.25 rmse=4.136 nrmse=0.01616 maxe=144.9 psnr=29.81
+Encode elapsed time: 0.03300 (s)
+# encode1 rate: 121.22 (GB / sec) 21
+Decode elapsed time: 0.01018 (s)
+# decode1 rate: 393.11 (GB / sec) 21
+BENCH_START:HACC:zz.f32:8
+type=float nx=1073726487 ny=1 nz=1 nw=1 raw=4294905948 zfp=536863248 ratio=8 rate=4 rmse=16.62 nrmse=0.06492 maxe=224 psnr=17.73
+Encode elapsed time: 0.02199 (s)
+# encode1 rate: 181.89 (GB / sec) 16
+Decode elapsed time: 0.00753 (s)
+# decode1 rate: 530.86 (GB / sec) 16
+BENCH_START:EXAFEL:SDRBENCH-EXAFEL-data-130x1480x1552.f32:4
+type=float nx=1552 ny=1480 nz=130 nw=1 raw=1194419200 zfp=303198720 ratio=3.94 rate=8.123 rmse=1.915 nrmse=0.0001162 maxe=220.8 psnr=72.68
+Encode elapsed time: 0.01470 (s)
+# encode3 rate: 75.70 (GB / sec) 
+Decode elapsed time: 0.00506 (s)
+# decode3 rate: 219.88 (GB / sec) 512
+BENCH_START:EXAFEL:SDRBENCH-EXAFEL-data-130x1480x1552.f32:6
+type=float nx=1552 ny=1480 nz=130 nw=1 raw=1194419200 zfp=201935080 ratio=5.91 rate=5.41 rmse=12.12 nrmse=0.0007351 maxe=1604 psnr=56.65
+Encode elapsed time: 0.01417 (s)
+# encode3 rate: 78.48 (GB / sec) 
+Decode elapsed time: 0.00477 (s)
+# decode3 rate: 233.06 (GB / sec) 341
+BENCH_START:EXAFEL:SDRBENCH-EXAFEL-data-130x1480x1552.f32:8
+type=float nx=1552 ny=1480 nz=130 nw=1 raw=1194419200 zfp=151599360 ratio=7.88 rate=4.062 rmse=30.55 nrmse=0.001854 maxe=4445 psnr=48.62
+Encode elapsed time: 0.01557 (s)
+# encode3 rate: 71.44 (GB / sec) 
+Decode elapsed time: 0.00457 (s)
+# decode3 rate: 243.23 (GB / sec) 256
+BENCH_START:QMCPACK:einspline_115_69_69_288.f32:4
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=157684320 ratio=4 rate=8 rmse=0.03933 nrmse=0.001191 maxe=2.684 psnr=52.46
+Encode elapsed time: 0.01048 (s)
+# encode1 rate: 56.08 (GB / sec) 32
+Decode elapsed time: 0.00329 (s)
+# decode1 rate: 178.55 (GB / sec) 32
+BENCH_START:QMCPACK:einspline_115_69_69_288.f32:6
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=103480336 ratio=6.1 rate=5.25 rmse=0.2479 nrmse=0.007511 maxe=14.11 psnr=36.47
+Encode elapsed time: 0.01103 (s)
+# encode1 rate: 53.24 (GB / sec) 21
+Decode elapsed time: 0.00269 (s)
+# decode1 rate: 218.14 (GB / sec) 21
+BENCH_START:QMCPACK:einspline_115_69_69_288.f32:8
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=78842160 ratio=8 rate=4 rmse=0.7265 nrmse=0.02201 maxe=47.58 psnr=27.13
+Encode elapsed time: 0.00955 (s)
+# encode1 rate: 61.52 (GB / sec) 16
+Decode elapsed time: 0.00214 (s)
+# decode1 rate: 275.12 (GB / sec) 16
+BENCH_START:QMCPACK:einspline_288_115_69_69.pre.f32:4
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=157684320 ratio=4 rate=8 rmse=0.01109 nrmse=0.000336 maxe=1.393 psnr=63.45
+Encode elapsed time: 0.01133 (s)
+# encode1 rate: 51.83 (GB / sec) 32
+Decode elapsed time: 0.00339 (s)
+# decode1 rate: 173.22 (GB / sec) 32
+BENCH_START:QMCPACK:einspline_288_115_69_69.pre.f32:6
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=103480336 ratio=6.1 rate=5.25 rmse=0.07661 nrmse=0.002321 maxe=7.459 psnr=46.67
+Encode elapsed time: 0.01104 (s)
+# encode1 rate: 53.20 (GB / sec) 21
+Decode elapsed time: 0.00221 (s)
+# decode1 rate: 265.53 (GB / sec) 21
+BENCH_START:QMCPACK:einspline_288_115_69_69.pre.f32:8
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=78842160 ratio=8 rate=4 rmse=0.196 nrmse=0.005937 maxe=47.38 psnr=38.51
+Encode elapsed time: 0.00929 (s)
+# encode1 rate: 63.23 (GB / sec) 16
+Decode elapsed time: 0.00155 (s)
+# decode1 rate: 379.38 (GB / sec) 16
+BENCH_START:RTM:pressure_1000:4
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=357654528 ratio=4 rate=8 rmse=0.03705 nrmse=0.0001555 maxe=7.502 psnr=70.15
+Encode elapsed time: 0.00979 (s)
+# encode1 rate: 136.16 (GB / sec) 32
+Decode elapsed time: 0.00222 (s)
+# decode1 rate: 600.01 (GB / sec) 32
+BENCH_START:RTM:pressure_1000:6
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=234710784 ratio=6.1 rate=5.25 rmse=0.2251 nrmse=0.0009448 maxe=41.32 psnr=54.47
+Encode elapsed time: 0.00893 (s)
+# encode1 rate: 149.23 (GB / sec) 21
+Decode elapsed time: 0.00183 (s)
+# decode1 rate: 727.82 (GB / sec) 21
+BENCH_START:RTM:pressure_1000:8
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=178827264 ratio=8 rate=4 rmse=0.5984 nrmse=0.002511 maxe=189.2 psnr=45.98
+Encode elapsed time: 0.00815 (s)
+# encode1 rate: 163.48 (GB / sec) 16
+Decode elapsed time: 0.00160 (s)
+# decode1 rate: 832.30 (GB / sec) 16
+BENCH_START:RTM:pressure_2000:4
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=357654528 ratio=4 rate=8 rmse=0.02856 nrmse=0.0003303 maxe=3.491 psnr=63.60
+Encode elapsed time: 0.01393 (s)
+# encode1 rate: 95.67 (GB / sec) 32
+Decode elapsed time: 0.00551 (s)
+# decode1 rate: 241.64 (GB / sec) 32
+BENCH_START:RTM:pressure_2000:6
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=234710784 ratio=6.1 rate=5.25 rmse=0.1749 nrmse=0.002023 maxe=21.27 psnr=47.86
+Encode elapsed time: 0.01391 (s)
+# encode1 rate: 95.78 (GB / sec) 21
+Decode elapsed time: 0.00412 (s)
+# decode1 rate: 323.09 (GB / sec) 21
+BENCH_START:RTM:pressure_2000:8
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=178827264 ratio=8 rate=4 rmse=0.4556 nrmse=0.00527 maxe=95.37 psnr=39.54
+Encode elapsed time: 0.01179 (s)
+# encode1 rate: 113.02 (GB / sec) 16
+Decode elapsed time: 0.00314 (s)
+# decode1 rate: 423.73 (GB / sec) 16
+BENCH_START:RTM:pressure_3000:4
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=357654528 ratio=4 rate=8 rmse=0.01773 nrmse=0.0003521 maxe=1.415 psnr=63.05
+Encode elapsed time: 0.01715 (s)
+# encode1 rate: 77.67 (GB / sec) 32
+Decode elapsed time: 0.00756 (s)
+# decode1 rate: 176.24 (GB / sec) 32
+BENCH_START:RTM:pressure_3000:6
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=234710784 ratio=6.1 rate=5.25 rmse=0.1135 nrmse=0.002255 maxe=7.411 psnr=46.92
+Encode elapsed time: 0.01639 (s)
+# encode1 rate: 81.30 (GB / sec) 21
+Decode elapsed time: 0.00539 (s)
+# decode1 rate: 247.13 (GB / sec) 21
+BENCH_START:RTM:pressure_3000:8
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=178827264 ratio=8 rate=4 rmse=0.3084 nrmse=0.006124 maxe=24 psnr=38.24
+Encode elapsed time: 0.01257 (s)
+# encode1 rate: 106.03 (GB / sec) 16
+Decode elapsed time: 0.00393 (s)
+# decode1 rate: 338.81 (GB / sec) 16
+BENCH_START:SYNTHESIS:synthetic_truss_with_five_defects_1200x1200x1200_float32.raw:4
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=1728000000 ratio=4 rate=8 rmse=3.57e-06 nrmse=0.0001732 maxe=0.000207 psnr=69.21
+Encode elapsed time: 0.04571 (s)
+# encode3 rate: 140.84 (GB / sec) 
+Decode elapsed time: 0.03095 (s)
+# decode3 rate: 207.99 (GB / sec) 512
+BENCH_START:SYNTHESIS:synthetic_truss_with_five_defects_1200x1200x1200_float32.raw:6
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=1150875000 ratio=6.01 rate=5.328 rmse=2.263e-05 nrmse=0.001098 maxe=0.00143 psnr=53.17
+Encode elapsed time: 0.04373 (s)
+# encode3 rate: 147.20 (GB / sec) 
+Decode elapsed time: 0.02939 (s)
+# decode3 rate: 218.99 (GB / sec) 341
+BENCH_START:SYNTHESIS:synthetic_truss_with_five_defects_1200x1200x1200_float32.raw:8
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=864000000 ratio=8 rate=4 rmse=5.61e-05 nrmse=0.002722 maxe=0.002899 psnr=45.28
+Encode elapsed time: 0.04261 (s)
+# encode3 rate: 151.08 (GB / sec) 
+Decode elapsed time: 0.02823 (s)
+# decode3 rate: 228.05 (GB / sec) 256
+BENCH_START:EXAALT:dataset1-5423x3137.x.f32.dat:4
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=17011952 ratio=4 rate=8 rmse=0.4417 nrmse=0.009398 maxe=5.546 psnr=34.52
+Encode elapsed time: 0.00677 (s)
+# encode1 rate: 9.36 (GB / sec) 32
+Decode elapsed time: 0.00040 (s)
+# decode1 rate: 157.53 (GB / sec) 32
+BENCH_START:EXAALT:dataset1-5423x3137.x.f32.dat:6
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=11164096 ratio=6.1 rate=5.25 rmse=2.636 nrmse=0.0561 maxe=30.15 psnr=19.00
+Encode elapsed time: 0.00678 (s)
+# encode1 rate: 9.35 (GB / sec) 21
+Decode elapsed time: 0.00025 (s)
+# decode1 rate: 258.54 (GB / sec) 21
+BENCH_START:EXAALT:dataset1-5423x3137.x.f32.dat:8
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=8505976 ratio=8 rate=4 rmse=4.939 nrmse=0.1051 maxe=63 psnr=13.55
+Encode elapsed time: 0.00650 (s)
+# encode1 rate: 9.75 (GB / sec) 16
+Decode elapsed time: 0.00016 (s)
+# decode1 rate: 400.58 (GB / sec) 16
+BENCH_START:EXAALT:dataset1-5423x3137.y.f32.dat:4
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=17011952 ratio=4 rate=8 rmse=0.3535 nrmse=0.007522 maxe=4.188 psnr=36.45
+Encode elapsed time: 0.00695 (s)
+# encode1 rate: 9.12 (GB / sec) 32
+Decode elapsed time: 0.00037 (s)
+# decode1 rate: 169.69 (GB / sec) 32
+BENCH_START:EXAALT:dataset1-5423x3137.y.f32.dat:6
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=11164096 ratio=6.1 rate=5.25 rmse=2.28 nrmse=0.04852 maxe=29.82 psnr=20.26
+Encode elapsed time: 0.00654 (s)
+# encode1 rate: 9.69 (GB / sec) 21
+Decode elapsed time: 0.00022 (s)
+# decode1 rate: 285.82 (GB / sec) 21
+BENCH_START:EXAALT:dataset1-5423x3137.y.f32.dat:8
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=8505976 ratio=8 rate=4 rmse=4.124 nrmse=0.08775 maxe=47.68 psnr=15.11
+Encode elapsed time: 0.00774 (s)
+# encode1 rate: 8.18 (GB / sec) 16
+Decode elapsed time: 0.00015 (s)
+# decode1 rate: 434.02 (GB / sec) 16
+BENCH_START:EXAALT:dataset1-5423x3137.z.f32.dat:4
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=17011952 ratio=4 rate=8 rmse=0.2132 nrmse=0.004608 maxe=4.941 psnr=40.71
+Encode elapsed time: 0.00715 (s)
+# encode1 rate: 8.86 (GB / sec) 32
+Decode elapsed time: 0.00037 (s)
+# decode1 rate: 171.50 (GB / sec) 32
+BENCH_START:EXAALT:dataset1-5423x3137.z.f32.dat:6
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=11164096 ratio=6.1 rate=5.25 rmse=1.41 nrmse=0.03048 maxe=29.29 psnr=24.30
+Encode elapsed time: 0.00677 (s)
+# encode1 rate: 9.36 (GB / sec) 21
+Decode elapsed time: 0.00021 (s)
+# decode1 rate: 305.20 (GB / sec) 21
+BENCH_START:EXAALT:dataset1-5423x3137.z.f32.dat:8
+type=float nx=17011951 ny=1 nz=1 nw=1 raw=68047804 zfp=8505976 ratio=8 rate=4 rmse=2.088 nrmse=0.04512 maxe=44.46 psnr=20.89
+Encode elapsed time: 0.00670 (s)
+# encode1 rate: 9.46 (GB / sec) 16
+Decode elapsed time: 0.00014 (s)
+# decode1 rate: 462.94 (GB / sec) 16
+BENCH_START:EXAALT:dataset2-83x1077290.x.f32.dat:4
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=89415072 ratio=4 rate=8 rmse=0.004963 nrmse=0.004951 maxe=0.1148 psnr=40.09
+Encode elapsed time: 0.00904 (s)
+# encode1 rate: 36.85 (GB / sec) 32
+Decode elapsed time: 0.00173 (s)
+# decode1 rate: 192.86 (GB / sec) 32
+BENCH_START:EXAALT:dataset2-83x1077290.x.f32.dat:6
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=58678648 ratio=6.1 rate=5.25 rmse=0.0289 nrmse=0.02883 maxe=0.7639 psnr=24.78
+Encode elapsed time: 0.00846 (s)
+# encode1 rate: 39.39 (GB / sec) 21
+Decode elapsed time: 0.00096 (s)
+# decode1 rate: 346.49 (GB / sec) 21
+BENCH_START:EXAALT:dataset2-83x1077290.x.f32.dat:8
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=44707536 ratio=8 rate=4 rmse=0.07009 nrmse=0.06993 maxe=3 psnr=17.09
+Encode elapsed time: 0.01161 (s)
+# encode1 rate: 28.69 (GB / sec) 16
+Decode elapsed time: 0.00067 (s)
+# decode1 rate: 500.49 (GB / sec) 16
+BENCH_START:EXAALT:dataset2-83x1077290.y.f32.dat:4
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=89415072 ratio=4 rate=8 rmse=0.00318 nrmse=0.003173 maxe=0.1565 psnr=43.95
+Encode elapsed time: 0.01396 (s)
+# encode1 rate: 23.86 (GB / sec) 32
+Decode elapsed time: 0.00196 (s)
+# decode1 rate: 170.22 (GB / sec) 32
+BENCH_START:EXAALT:dataset2-83x1077290.y.f32.dat:6
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=58678648 ratio=6.1 rate=5.25 rmse=0.01994 nrmse=0.01989 maxe=0.8747 psnr=28.00
+Encode elapsed time: 0.00849 (s)
+# encode1 rate: 39.24 (GB / sec) 21
+Decode elapsed time: 0.00093 (s)
+# decode1 rate: 356.75 (GB / sec) 21
+BENCH_START:EXAALT:dataset2-83x1077290.y.f32.dat:8
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=44707536 ratio=8 rate=4 rmse=0.06799 nrmse=0.06785 maxe=3 psnr=17.35
+Encode elapsed time: 0.00885 (s)
+# encode1 rate: 37.62 (GB / sec) 16
+Decode elapsed time: 0.00066 (s)
+# decode1 rate: 501.05 (GB / sec) 16
+BENCH_START:EXAALT:dataset2-83x1077290.z.f32.dat:4
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=89415072 ratio=4 rate=8 rmse=0.004582 nrmse=0.006393 maxe=0.08163 psnr=37.87
+Encode elapsed time: 0.00944 (s)
+# encode1 rate: 35.30 (GB / sec) 32
+Decode elapsed time: 0.00192 (s)
+# decode1 rate: 173.68 (GB / sec) 32
+BENCH_START:EXAALT:dataset2-83x1077290.z.f32.dat:6
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=58678648 ratio=6.1 rate=5.25 rmse=0.03049 nrmse=0.04254 maxe=0.4588 psnr=21.40
+Encode elapsed time: 0.00846 (s)
+# encode1 rate: 39.37 (GB / sec) 21
+Decode elapsed time: 0.00107 (s)
+# decode1 rate: 311.76 (GB / sec) 21
+BENCH_START:EXAALT:dataset2-83x1077290.z.f32.dat:8
+type=float nx=89415070 ny=1 nz=1 nw=1 raw=357660280 zfp=44707536 ratio=8 rate=4 rmse=0.04358 nrmse=0.0608 maxe=1.49 psnr=18.30
+Encode elapsed time: 0.00747 (s)
+# encode1 rate: 44.60 (GB / sec) 16
+Decode elapsed time: 0.00067 (s)
+# decode1 rate: 495.42 (GB / sec) 16
+BENCH_START:SCALE:PRES-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=0.03699 nrmse=3.716e-07 maxe=1.977 psnr=122.58
+Encode elapsed time: 0.01121 (s)
+# encode3 rate: 46.90 (GB / sec) 
+Decode elapsed time: 0.00314 (s)
+# decode3 rate: 167.41 (GB / sec) 512
+BENCH_START:SCALE:PRES-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=0.2424 nrmse=2.435e-06 maxe=11.9 psnr=106.25
+Encode elapsed time: 0.01126 (s)
+# encode3 rate: 46.69 (GB / sec) 
+Decode elapsed time: 0.00281 (s)
+# decode3 rate: 186.86 (GB / sec) 341
+BENCH_START:SCALE:PRES-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=0.6602 nrmse=6.633e-06 maxe=29.2 psnr=97.54
+Encode elapsed time: 0.01094 (s)
+# encode3 rate: 48.04 (GB / sec) 
+Decode elapsed time: 0.00254 (s)
+# decode3 rate: 207.03 (GB / sec) 256
+BENCH_START:SCALE:QC-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=1.929e-08 nrmse=6.406e-06 maxe=2.656e-06 psnr=97.85
+Encode elapsed time: 0.00900 (s)
+# encode3 rate: 58.41 (GB / sec) 
+Decode elapsed time: 0.00188 (s)
+# decode3 rate: 279.06 (GB / sec) 512
+BENCH_START:SCALE:QC-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=1.16e-07 nrmse=3.852e-05 maxe=1.995e-05 psnr=82.26
+Encode elapsed time: 0.00965 (s)
+# encode3 rate: 54.45 (GB / sec) 
+Decode elapsed time: 0.00173 (s)
+# decode3 rate: 303.16 (GB / sec) 341
+BENCH_START:SCALE:QC-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=2.694e-07 nrmse=8.947e-05 maxe=3.168e-05 psnr=74.95
+Encode elapsed time: 0.00887 (s)
+# encode3 rate: 59.27 (GB / sec) 
+Decode elapsed time: 0.00158 (s)
+# decode3 rate: 332.90 (GB / sec) 256
+BENCH_START:SCALE:QG-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=4.575e-08 nrmse=3.075e-06 maxe=1.37e-05 psnr=104.22
+Encode elapsed time: 0.01128 (s)
+# encode3 rate: 46.63 (GB / sec) 
+Decode elapsed time: 0.00295 (s)
+# decode3 rate: 178.20 (GB / sec) 512
+BENCH_START:SCALE:QG-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=2.687e-07 nrmse=1.805e-05 maxe=7.034e-05 psnr=88.85
+Encode elapsed time: 0.01087 (s)
+# encode3 rate: 48.36 (GB / sec) 
+Decode elapsed time: 0.00268 (s)
+# decode3 rate: 196.15 (GB / sec) 341
+BENCH_START:SCALE:QG-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=6.255e-07 nrmse=4.203e-05 maxe=0.0001556 psnr=81.51
+Encode elapsed time: 0.00993 (s)
+# encode3 rate: 52.95 (GB / sec) 
+Decode elapsed time: 0.00240 (s)
+# decode3 rate: 219.21 (GB / sec) 256
+BENCH_START:SCALE:QI-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=5.925e-09 nrmse=3.702e-06 maxe=2.628e-06 psnr=102.61
+Encode elapsed time: 0.00905 (s)
+# encode3 rate: 58.11 (GB / sec) 
+Decode elapsed time: 0.00180 (s)
+# decode3 rate: 292.50 (GB / sec) 512
+BENCH_START:SCALE:QI-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=3.507e-08 nrmse=2.191e-05 maxe=9.112e-06 psnr=87.17
+Encode elapsed time: 0.01006 (s)
+# encode3 rate: 52.27 (GB / sec) 
+Decode elapsed time: 0.00163 (s)
+# decode3 rate: 322.12 (GB / sec) 341
+BENCH_START:SCALE:QI-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=8.145e-08 nrmse=5.089e-05 maxe=2.085e-05 psnr=79.85
+Encode elapsed time: 0.00842 (s)
+# encode3 rate: 62.47 (GB / sec) 
+Decode elapsed time: 0.00147 (s)
+# decode3 rate: 357.62 (GB / sec) 256
+BENCH_START:SCALE:QR-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=2.029e-08 nrmse=3.184e-06 maxe=5.579e-06 psnr=103.92
+Encode elapsed time: 0.01279 (s)
+# encode3 rate: 41.10 (GB / sec) 
+Decode elapsed time: 0.00302 (s)
+# decode3 rate: 174.35 (GB / sec) 512
+BENCH_START:SCALE:QR-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=1.183e-07 nrmse=1.856e-05 maxe=3.077e-05 psnr=88.61
+Encode elapsed time: 0.01120 (s)
+# encode3 rate: 46.95 (GB / sec) 
+Decode elapsed time: 0.00274 (s)
+# decode3 rate: 192.06 (GB / sec) 341
+BENCH_START:SCALE:QR-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=2.774e-07 nrmse=4.353e-05 maxe=5.815e-05 psnr=81.20
+Encode elapsed time: 0.01005 (s)
+# encode3 rate: 52.29 (GB / sec) 
+Decode elapsed time: 0.00246 (s)
+# decode3 rate: 213.61 (GB / sec) 256
+BENCH_START:SCALE:QS-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=5.45e-09 nrmse=7.2e-06 maxe=1.155e-06 psnr=96.83
+Encode elapsed time: 0.01109 (s)
+# encode3 rate: 47.39 (GB / sec) 
+Decode elapsed time: 0.00292 (s)
+# decode3 rate: 180.02 (GB / sec) 512
+BENCH_START:SCALE:QS-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=3.293e-08 nrmse=4.35e-05 maxe=5.688e-06 psnr=81.21
+Encode elapsed time: 0.01093 (s)
+# encode3 rate: 48.12 (GB / sec) 
+Decode elapsed time: 0.00266 (s)
+# decode3 rate: 197.70 (GB / sec) 341
+BENCH_START:SCALE:QS-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=7.62e-08 nrmse=0.0001007 maxe=1.363e-05 psnr=73.92
+Encode elapsed time: 0.01201 (s)
+# encode3 rate: 43.77 (GB / sec) 
+Decode elapsed time: 0.00235 (s)
+# decode3 rate: 223.24 (GB / sec) 256
+BENCH_START:SCALE:QV-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=1.695e-07 nrmse=8.684e-06 maxe=1.242e-05 psnr=95.21
+Encode elapsed time: 0.01141 (s)
+# encode3 rate: 46.09 (GB / sec) 
+Decode elapsed time: 0.00291 (s)
+# decode3 rate: 180.61 (GB / sec) 512
+BENCH_START:SCALE:QV-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=1.015e-06 nrmse=5.201e-05 maxe=6.207e-05 psnr=79.66
+Encode elapsed time: 0.01041 (s)
+# encode3 rate: 50.50 (GB / sec) 
+Decode elapsed time: 0.00263 (s)
+# decode3 rate: 199.98 (GB / sec) 341
+BENCH_START:SCALE:QV-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=2.351e-06 nrmse=0.0001204 maxe=0.0001674 psnr=72.37
+Encode elapsed time: 0.00992 (s)
+# encode3 rate: 52.99 (GB / sec) 
+Decode elapsed time: 0.00233 (s)
+# decode3 rate: 225.72 (GB / sec) 256
+BENCH_START:SCALE:RH-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=0.002831 nrmse=1.384e-05 maxe=0.263 psnr=91.15
+Encode elapsed time: 0.01332 (s)
+# encode3 rate: 39.46 (GB / sec) 
+Decode elapsed time: 0.00292 (s)
+# decode3 rate: 180.03 (GB / sec) 512
+BENCH_START:SCALE:RH-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=0.01702 nrmse=8.324e-05 maxe=1.443 psnr=75.57
+Encode elapsed time: 0.01094 (s)
+# encode3 rate: 48.05 (GB / sec) 
+Decode elapsed time: 0.00263 (s)
+# decode3 rate: 199.62 (GB / sec) 341
+BENCH_START:SCALE:RH-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=0.03942 nrmse=0.0001928 maxe=2.361 psnr=68.28
+Encode elapsed time: 0.00965 (s)
+# encode3 rate: 54.49 (GB / sec) 
+Decode elapsed time: 0.00236 (s)
+# decode3 rate: 222.72 (GB / sec) 256
+BENCH_START:SCALE:T-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=0.0004412 nrmse=3.324e-06 maxe=0.02969 psnr=103.55
+Encode elapsed time: 0.01137 (s)
+# encode3 rate: 46.24 (GB / sec) 
+Decode elapsed time: 0.00316 (s)
+# decode3 rate: 166.50 (GB / sec) 512
+BENCH_START:SCALE:T-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=0.002668 nrmse=2.01e-05 maxe=0.1602 psnr=87.92
+Encode elapsed time: 0.01250 (s)
+# encode3 rate: 42.05 (GB / sec) 
+Decode elapsed time: 0.00286 (s)
+# decode3 rate: 184.10 (GB / sec) 341
+BENCH_START:SCALE:T-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=0.00627 nrmse=4.724e-05 maxe=0.3372 psnr=80.49
+Encode elapsed time: 0.01023 (s)
+# encode3 rate: 51.37 (GB / sec) 
+Decode elapsed time: 0.00257 (s)
+# decode3 rate: 204.70 (GB / sec) 256
+BENCH_START:SCALE:U-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=0.0004061 nrmse=3.429e-06 maxe=0.02706 psnr=103.28
+Encode elapsed time: 0.01090 (s)
+# encode3 rate: 48.22 (GB / sec) 
+Decode elapsed time: 0.00286 (s)
+# decode3 rate: 183.95 (GB / sec) 512
+BENCH_START:SCALE:U-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=0.002453 nrmse=2.071e-05 maxe=0.2301 psnr=87.65
+Encode elapsed time: 0.01055 (s)
+# encode3 rate: 49.81 (GB / sec) 
+Decode elapsed time: 0.00263 (s)
+# decode3 rate: 199.62 (GB / sec) 341
+BENCH_START:SCALE:U-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=0.005915 nrmse=4.994e-05 maxe=0.3471 psnr=80.01
+Encode elapsed time: 0.00985 (s)
+# encode3 rate: 53.36 (GB / sec) 
+Decode elapsed time: 0.00228 (s)
+# decode3 rate: 230.39 (GB / sec) 256
+BENCH_START:SCALE:V-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=0.0004607 nrmse=4.627e-06 maxe=0.04756 psnr=100.67
+Encode elapsed time: 0.01100 (s)
+# encode3 rate: 47.79 (GB / sec) 
+Decode elapsed time: 0.00288 (s)
+# decode3 rate: 182.49 (GB / sec) 512
+BENCH_START:SCALE:V-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=0.002804 nrmse=2.816e-05 maxe=0.2365 psnr=84.99
+Encode elapsed time: 0.01061 (s)
+# encode3 rate: 49.56 (GB / sec) 
+Decode elapsed time: 0.00260 (s)
+# decode3 rate: 202.19 (GB / sec) 341
+BENCH_START:SCALE:V-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=0.006749 nrmse=6.778e-05 maxe=0.8115 psnr=77.36
+Encode elapsed time: 0.01178 (s)
+# encode3 rate: 44.64 (GB / sec) 
+Decode elapsed time: 0.00229 (s)
+# decode3 rate: 229.58 (GB / sec) 256
+BENCH_START:SCALE:W-98x1200x1200.f32:4
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=144000000 ratio=3.92 rate=8.163 rmse=0.0002929 nrmse=4.584e-06 maxe=0.03912 psnr=100.75
+Encode elapsed time: 0.01083 (s)
+# encode3 rate: 48.52 (GB / sec) 
+Decode elapsed time: 0.00318 (s)
+# decode3 rate: 165.39 (GB / sec) 512
+BENCH_START:SCALE:W-98x1200x1200.f32:6
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=95906248 ratio=5.89 rate=5.437 rmse=0.001685 nrmse=2.638e-05 maxe=0.1605 psnr=85.55
+Encode elapsed time: 0.01046 (s)
+# encode3 rate: 50.24 (GB / sec) 
+Decode elapsed time: 0.00293 (s)
+# decode3 rate: 179.63 (GB / sec) 341
+BENCH_START:SCALE:W-98x1200x1200.f32:8
+type=float nx=1200 ny=1200 nz=98 nw=1 raw=564480000 zfp=72000000 ratio=7.84 rate=4.082 rmse=0.004052 nrmse=6.342e-05 maxe=0.4784 psnr=77.93
+Encode elapsed time: 0.01005 (s)
+# encode3 rate: 52.30 (GB / sec) 
+Decode elapsed time: 0.00273 (s)
+# decode3 rate: 192.63 (GB / sec) 256

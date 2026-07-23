@@ -1,0 +1,1762 @@
+srun: job 15759960 queued and waiting for resources
+srun: job 15759960 has been allocated resources
+BENCH_START:CESM:MILIO-o:2
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 2.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 3.053 ms
+  Selected AbsEB: 7.855169e-11 (RelEB: 1.000000e-06)
+  Estimated Ratio: 3.61 (Target: 2.00)
+Starting Compression...
+  Compression Time: 3.595 ms
+  Compressed Size: 186989884
+  Achieved Ratio: 3.60
+Throughput Statistics:
+  Profiling Throughput:    220.77 GB/s
+  Compression Throughput:  187.44 GB/s
+  Total (Prof+Comp) Thrpt: 101.37 GB/s
+Starting Decompression...
+  Decompression Time: 3.031 ms
+  Decompression Throughput: 222.31 GB/s
+Verification Results:
+  Max Error: 8.003553e-11
+  PSNR: 127.70 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:2
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=362880000 ratio=1.86 rate=17.23 rmse=4.47e-12 nrmse=5.691e-08 maxe=6.658e-10 psnr=138.88
+Encode elapsed time: 0.04022 (s)
+# encode3 rate: 15.60 (GB / sec) 
+Decode elapsed time: 0.00470 (s)
+# decode3 rate: 133.45 (GB / sec) 1024
+BENCH_START:CESM:MILIO-o:3
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 3.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.515 ms
+  Selected AbsEB: 7.855169e-11 (RelEB: 1.000000e-06)
+  Estimated Ratio: 3.61 (Target: 3.00)
+Starting Compression...
+  Compression Time: 2.986 ms
+  Compressed Size: 186989884
+  Achieved Ratio: 3.60
+Throughput Statistics:
+  Profiling Throughput:    268.00 GB/s
+  Compression Throughput:  225.69 GB/s
+  Total (Prof+Comp) Thrpt: 122.51 GB/s
+Starting Decompression...
+  Decompression Time: 2.378 ms
+  Decompression Throughput: 283.38 GB/s
+Verification Results:
+  Max Error: 8.003553e-11
+  PSNR: 127.70 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:3
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=242038120 ratio=2.78 rate=11.49 rmse=1.794e-10 nrmse=2.283e-06 maxe=1.721e-08 psnr=106.81
+Encode elapsed time: 0.01402 (s)
+# encode3 rate: 44.77 (GB / sec) 
+Decode elapsed time: 0.00423 (s)
+# decode3 rate: 148.38 (GB / sec) 683
+BENCH_START:CESM:MILIO-o:4
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 4.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.522 ms
+  Selected AbsEB: 2.356551e-10 (RelEB: 3.000000e-06)
+  Estimated Ratio: 4.08 (Target: 4.00)
+Starting Compression...
+  Compression Time: 2.683 ms
+  Compressed Size: 165385924
+  Achieved Ratio: 4.07
+Throughput Statistics:
+  Profiling Throughput:    267.21 GB/s
+  Compression Throughput:  251.17 GB/s
+  Total (Prof+Comp) Thrpt: 129.47 GB/s
+Starting Decompression...
+  Decompression Time: 1.973 ms
+  Decompression Throughput: 341.60 GB/s
+Verification Results:
+  Max Error: 2.401066e-10
+  PSNR: 118.17 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:4
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=181440000 ratio=3.71 rate=8.615 rmse=1.132e-09 nrmse=1.441e-05 maxe=1.52e-07 psnr=90.80
+Encode elapsed time: 0.01203 (s)
+# encode3 rate: 52.19 (GB / sec) 
+Decode elapsed time: 0.00296 (s)
+# decode3 rate: 211.80 (GB / sec) 512
+BENCH_START:CESM:MILIO-o:5
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 5.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 3.066 ms
+  Selected AbsEB: 1.178275e-09 (RelEB: 1.500000e-05)
+  Estimated Ratio: 5.03 (Target: 5.00)
+Starting Compression...
+  Compression Time: 2.793 ms
+  Compressed Size: 134262426
+  Achieved Ratio: 5.02
+Throughput Statistics:
+  Profiling Throughput:    219.79 GB/s
+  Compression Throughput:  241.27 GB/s
+  Total (Prof+Comp) Thrpt: 115.01 GB/s
+Starting Decompression...
+  Decompression Time: 2.170 ms
+  Decompression Throughput: 310.61 GB/s
+Verification Results:
+  Max Error: 1.178705e-09
+  PSNR: 104.21 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:5
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=145293744 ratio=4.64 rate=6.899 rmse=3.314e-09 nrmse=4.219e-05 maxe=3.59e-07 psnr=81.48
+Encode elapsed time: 0.01177 (s)
+# encode3 rate: 53.31 (GB / sec) 
+Decode elapsed time: 0.00300 (s)
+# decode3 rate: 209.14 (GB / sec) 410
+BENCH_START:CESM:MILIO-o:6
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 6.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.510 ms
+  Selected AbsEB: 3.927584e-09 (RelEB: 5.000000e-05)
+  Estimated Ratio: 6.07 (Target: 6.00)
+Starting Compression...
+  Compression Time: 2.384 ms
+  Compressed Size: 111276295
+  Achieved Ratio: 6.06
+Throughput Statistics:
+  Profiling Throughput:    268.51 GB/s
+  Compression Throughput:  282.73 GB/s
+  Total (Prof+Comp) Thrpt: 137.72 GB/s
+Starting Decompression...
+  Decompression Time: 1.636 ms
+  Decompression Throughput: 411.93 GB/s
+Verification Results:
+  Max Error: 3.929017e-09
+  PSNR: 93.79 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:6
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=120841872 ratio=5.58 rate=5.738 rmse=6.705e-09 nrmse=8.535e-05 maxe=8.768e-07 psnr=75.36
+Encode elapsed time: 0.01088 (s)
+# encode3 rate: 57.70 (GB / sec) 
+Decode elapsed time: 0.00263 (s)
+# decode3 rate: 238.59 (GB / sec) 341
+BENCH_START:CESM:MILIO-o:7
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 7.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 3.012 ms
+  Selected AbsEB: 8.640686e-09 (RelEB: 1.100000e-04)
+  Estimated Ratio: 7.00 (Target: 7.00)
+Starting Compression...
+  Compression Time: 2.628 ms
+  Compressed Size: 96554846
+  Achieved Ratio: 6.98
+Throughput Statistics:
+  Profiling Throughput:    223.76 GB/s
+  Compression Throughput:  256.39 GB/s
+  Total (Prof+Comp) Thrpt: 119.49 GB/s
+Starting Decompression...
+  Decompression Time: 2.082 ms
+  Decompression Throughput: 323.66 GB/s
+Verification Results:
+  Max Error: 8.643838e-09
+  PSNR: 86.98 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:7
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=103831872 ratio=6.49 rate=4.93 rmse=1.087e-08 nrmse=0.0001383 maxe=1.547e-06 psnr=71.16
+Encode elapsed time: 0.01189 (s)
+# encode3 rate: 52.77 (GB / sec) 
+Decode elapsed time: 0.00310 (s)
+# decode3 rate: 202.18 (GB / sec) 293
+BENCH_START:CESM:MILIO-o:8
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 8.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.526 ms
+  Selected AbsEB: 1.728137e-08 (RelEB: 2.200000e-04)
+  Estimated Ratio: 8.07 (Target: 8.00)
+Starting Compression...
+  Compression Time: 2.375 ms
+  Compressed Size: 83858398
+  Achieved Ratio: 8.04
+Throughput Statistics:
+  Profiling Throughput:    266.84 GB/s
+  Compression Throughput:  283.71 GB/s
+  Total (Prof+Comp) Thrpt: 137.51 GB/s
+Starting Decompression...
+  Decompression Time: 1.705 ms
+  Decompression Throughput: 395.37 GB/s
+Verification Results:
+  Max Error: 1.728404e-08
+  PSNR: 81.00 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:8
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=90720000 ratio=7.43 rate=4.308 rmse=1.579e-08 nrmse=0.0002011 maxe=1.626e-06 psnr=67.91
+Encode elapsed time: 0.01034 (s)
+# encode3 rate: 60.69 (GB / sec) 
+Decode elapsed time: 0.00231 (s)
+# decode3 rate: 271.42 (GB / sec) 256
+BENCH_START:CESM:MILIO-o:10
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 10.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 3.052 ms
+  Selected AbsEB: 4.555998e-08 (RelEB: 5.800000e-04)
+  Estimated Ratio: 10.11 (Target: 10.00)
+Starting Compression...
+  Compression Time: 2.557 ms
+  Compressed Size: 67001439
+  Achieved Ratio: 10.06
+Throughput Statistics:
+  Profiling Throughput:    220.79 GB/s
+  Compression Throughput:  263.51 GB/s
+  Total (Prof+Comp) Thrpt: 120.13 GB/s
+Starting Decompression...
+  Decompression Time: 1.930 ms
+  Decompression Throughput: 349.10 GB/s
+Verification Results:
+  Max Error: 4.556205e-08
+  PSNR: 72.67 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:10
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=72646872 ratio=9.28 rate=3.45 rmse=2.71e-08 nrmse=0.000345 maxe=3.384e-06 psnr=63.22
+Encode elapsed time: 0.01041 (s)
+# encode3 rate: 60.32 (GB / sec) 
+Decode elapsed time: 0.00246 (s)
+# decode3 rate: 254.76 (GB / sec) 205
+BENCH_START:CESM:MILIO-o:16
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 16.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.561 ms
+  Selected AbsEB: 2.435102e-07 (RelEB: 3.100000e-03)
+  Estimated Ratio: 16.51 (Target: 16.00)
+Starting Compression...
+  Compression Time: 2.111 ms
+  Compressed Size: 41161761
+  Achieved Ratio: 16.37
+Throughput Statistics:
+  Profiling Throughput:    263.10 GB/s
+  Compression Throughput:  319.26 GB/s
+  Total (Prof+Comp) Thrpt: 144.23 GB/s
+Starting Decompression...
+  Decompression Time: 1.273 ms
+  Decompression Throughput: 529.60 GB/s
+Verification Results:
+  Max Error: 2.435117e-07
+  PSNR: 58.33 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:16
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=45360000 ratio=14.9 rate=2.154 rmse=7.378e-08 nrmse=0.0009392 maxe=6.77e-06 psnr=54.52
+Encode elapsed time: 0.00900 (s)
+# encode3 rate: 69.72 (GB / sec) 
+Decode elapsed time: 0.00154 (s)
+# decode3 rate: 408.22 (GB / sec) 128
+BENCH_START:CESM:MILIO-o:32
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-CESM-ATM-26x1800x3600/CLDICE_1_26_1800_3600.f32
+  Dims: 3600x1800x26
+  Elements: 168480000
+  Target Ratio: 32.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.000079
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 3.026 ms
+  Selected AbsEB: 1.728137e-06 (RelEB: 2.200000e-02)
+  Estimated Ratio: 33.92 (Target: 32.00)
+Starting Compression...
+  Compression Time: 2.050 ms
+  Compressed Size: 19923366
+  Achieved Ratio: 33.83
+Throughput Statistics:
+  Profiling Throughput:    222.69 GB/s
+  Compression Throughput:  328.71 GB/s
+  Total (Prof+Comp) Thrpt: 132.75 GB/s
+Starting Decompression...
+  Decompression Time: 1.061 ms
+  Decompression Throughput: 634.95 GB/s
+Verification Results:
+  Max Error: 1.728137e-06
+  PSNR: 42.28 dB
+  Compliance: PASS
+BENCH_START:CESM:cuZFP:32
+type=float nx=3600 ny=1800 nz=26 nw=1 raw=673920000 zfp=22680000 ratio=29.7 rate=1.077 rmse=2.728e-07 nrmse=0.003473 maxe=2.706e-05 psnr=43.17
+Encode elapsed time: 0.00823 (s)
+# encode3 rate: 76.26 (GB / sec) 
+Decode elapsed time: 0.00123 (s)
+# decode3 rate: 511.17 (GB / sec) 64
+BENCH_START:NYX:MILIO-o:2
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 2.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.435 ms
+  Selected AbsEB: 1.377893e-02 (RelEB: 1.000000e-06)
+  Estimated Ratio: 4.54 (Target: 2.00)
+Starting Compression...
+  Compression Time: 2.499 ms
+  Compressed Size: 118021194
+  Achieved Ratio: 4.55
+Throughput Statistics:
+  Profiling Throughput:    220.48 GB/s
+  Compression Throughput:  214.84 GB/s
+  Total (Prof+Comp) Thrpt: 108.81 GB/s
+Starting Decompression...
+  Decompression Time: 2.354 ms
+  Decompression Throughput: 228.04 GB/s
+Verification Results:
+  Max Error: 1.379395e-02
+  PSNR: 124.90 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:2
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=268435456 ratio=2 rate=16 rmse=0.000161 nrmse=1.169e-08 maxe=0.1531 psnr=152.63
+Encode elapsed time: 0.01290 (s)
+# encode3 rate: 38.76 (GB / sec) 
+Decode elapsed time: 0.00414 (s)
+# decode3 rate: 120.78 (GB / sec) 1024
+BENCH_START:NYX:MILIO-o:3
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 3.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.120 ms
+  Selected AbsEB: 1.377893e-02 (RelEB: 1.000000e-06)
+  Estimated Ratio: 4.54 (Target: 3.00)
+Starting Compression...
+  Compression Time: 2.189 ms
+  Compressed Size: 118021194
+  Achieved Ratio: 4.55
+Throughput Statistics:
+  Profiling Throughput:    253.24 GB/s
+  Compression Throughput:  245.21 GB/s
+  Total (Prof+Comp) Thrpt: 124.58 GB/s
+Starting Decompression...
+  Decompression Time: 1.918 ms
+  Decompression Throughput: 279.89 GB/s
+Verification Results:
+  Max Error: 1.379395e-02
+  PSNR: 124.90 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:3
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=179044352 ratio=3 rate=10.67 rmse=0.006531 nrmse=4.74e-07 maxe=6.845 psnr=120.46
+Encode elapsed time: 0.01138 (s)
+# encode3 rate: 43.93 (GB / sec) 
+Decode elapsed time: 0.00372 (s)
+# decode3 rate: 134.42 (GB / sec) 683
+BENCH_START:NYX:MILIO-o:4
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 4.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.383 ms
+  Selected AbsEB: 1.377893e-02 (RelEB: 1.000000e-06)
+  Estimated Ratio: 4.54 (Target: 4.00)
+Starting Compression...
+  Compression Time: 2.454 ms
+  Compressed Size: 118021194
+  Achieved Ratio: 4.55
+Throughput Statistics:
+  Profiling Throughput:    225.28 GB/s
+  Compression Throughput:  218.82 GB/s
+  Total (Prof+Comp) Thrpt: 111.00 GB/s
+Starting Decompression...
+  Decompression Time: 2.245 ms
+  Decompression Throughput: 239.19 GB/s
+Verification Results:
+  Max Error: 1.379395e-02
+  PSNR: 124.90 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:4
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=134217728 ratio=4 rate=8 rmse=0.04165 nrmse=3.023e-06 maxe=41.29 psnr=104.37
+Encode elapsed time: 0.01085 (s)
+# encode3 rate: 46.07 (GB / sec) 
+Decode elapsed time: 0.00362 (s)
+# decode3 rate: 138.21 (GB / sec) 512
+BENCH_START:NYX:MILIO-o:5
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 5.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.502 ms
+  Selected AbsEB: 2.755787e-02 (RelEB: 2.000000e-06)
+  Estimated Ratio: 5.27 (Target: 5.00)
+Starting Compression...
+  Compression Time: 2.395 ms
+  Compressed Size: 101599448
+  Achieved Ratio: 5.28
+Throughput Statistics:
+  Profiling Throughput:    214.54 GB/s
+  Compression Throughput:  224.15 GB/s
+  Total (Prof+Comp) Thrpt: 109.62 GB/s
+Starting Decompression...
+  Decompression Time: 2.191 ms
+  Decompression Throughput: 245.07 GB/s
+Verification Results:
+  Max Error: 2.783203e-02
+  PSNR: 118.89 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:5
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=107479040 ratio=5 rate=6.406 rmse=0.1253 nrmse=9.092e-06 maxe=165.9 psnr=94.81
+Encode elapsed time: 0.01130 (s)
+# encode3 rate: 44.24 (GB / sec) 
+Decode elapsed time: 0.00351 (s)
+# decode3 rate: 142.44 (GB / sec) 410
+BENCH_START:NYX:MILIO-o:6
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 6.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.242 ms
+  Selected AbsEB: 5.511574e-02 (RelEB: 4.000000e-06)
+  Estimated Ratio: 6.26 (Target: 6.00)
+Starting Compression...
+  Compression Time: 2.106 ms
+  Compressed Size: 85561141
+  Achieved Ratio: 6.27
+Throughput Statistics:
+  Profiling Throughput:    239.42 GB/s
+  Compression Throughput:  254.90 GB/s
+  Total (Prof+Comp) Thrpt: 123.46 GB/s
+Starting Decompression...
+  Decompression Time: 1.747 ms
+  Decompression Throughput: 307.30 GB/s
+Verification Results:
+  Max Error: 5.517578e-02
+  PSNR: 112.87 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:6
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=89391104 ratio=6.01 rate=5.328 rmse=0.2622 nrmse=1.903e-05 maxe=248 psnr=88.39
+Encode elapsed time: 0.01078 (s)
+# encode3 rate: 46.38 (GB / sec) 
+Decode elapsed time: 0.00345 (s)
+# decode3 rate: 144.80 (GB / sec) 341
+BENCH_START:NYX:MILIO-o:7
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 7.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.148 ms
+  Selected AbsEB: 1.102315e-01 (RelEB: 8.000000e-06)
+  Estimated Ratio: 7.60 (Target: 7.00)
+Starting Compression...
+  Compression Time: 1.998 ms
+  Compressed Size: 70413331
+  Achieved Ratio: 7.62
+Throughput Statistics:
+  Profiling Throughput:    249.95 GB/s
+  Compression Throughput:  268.73 GB/s
+  Total (Prof+Comp) Thrpt: 129.50 GB/s
+Starting Decompression...
+  Decompression Time: 1.589 ms
+  Decompression Throughput: 337.79 GB/s
+Verification Results:
+  Max Error: 1.102333e-01
+  PSNR: 106.84 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:7
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=76808192 ratio=6.99 rate=4.578 rmse=0.4462 nrmse=3.239e-05 maxe=540 psnr=83.77
+Encode elapsed time: 0.01069 (s)
+# encode3 rate: 46.76 (GB / sec) 
+Decode elapsed time: 0.00335 (s)
+# decode3 rate: 149.18 (GB / sec) 293
+BENCH_START:NYX:MILIO-o:8
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 8.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.488 ms
+  Selected AbsEB: 1.377893e-01 (RelEB: 1.000000e-05)
+  Estimated Ratio: 8.10 (Target: 8.00)
+Starting Compression...
+  Compression Time: 2.115 ms
+  Compressed Size: 66156002
+  Achieved Ratio: 8.12
+Throughput Statistics:
+  Profiling Throughput:    215.81 GB/s
+  Compression Throughput:  253.78 GB/s
+  Total (Prof+Comp) Thrpt: 116.63 GB/s
+Starting Decompression...
+  Decompression Time: 1.759 ms
+  Decompression Throughput: 305.16 GB/s
+Verification Results:
+  Max Error: 1.377895e-01
+  PSNR: 104.90 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:8
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=67108864 ratio=8 rate=4 rmse=0.6555 nrmse=4.757e-05 maxe=696.1 psnr=80.43
+Encode elapsed time: 0.01021 (s)
+# encode3 rate: 48.96 (GB / sec) 
+Decode elapsed time: 0.00291 (s)
+# decode3 rate: 172.09 (GB / sec) 256
+BENCH_START:NYX:MILIO-o:10
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 10.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.399 ms
+  Selected AbsEB: 2.755787e-01 (RelEB: 2.000000e-05)
+  Estimated Ratio: 10.16 (Target: 10.00)
+Starting Compression...
+  Compression Time: 1.989 ms
+  Compressed Size: 52691084
+  Achieved Ratio: 10.19
+Throughput Statistics:
+  Profiling Throughput:    223.75 GB/s
+  Compression Throughput:  269.97 GB/s
+  Total (Prof+Comp) Thrpt: 122.35 GB/s
+Starting Decompression...
+  Decompression Time: 1.514 ms
+  Decompression Throughput: 354.50 GB/s
+Verification Results:
+  Max Error: 2.755787e-01
+  PSNR: 98.82 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:10
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=53739520 ratio=9.99 rate=3.203 rmse=1.091 nrmse=7.917e-05 maxe=1091 psnr=76.01
+Encode elapsed time: 0.01012 (s)
+# encode3 rate: 49.41 (GB / sec) 
+Decode elapsed time: 0.00306 (s)
+# decode3 rate: 163.35 (GB / sec) 205
+BENCH_START:NYX:MILIO-o:16
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 16.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.052 ms
+  Selected AbsEB: 8.405150e-01 (RelEB: 6.100000e-05)
+  Estimated Ratio: 16.92 (Target: 16.00)
+Starting Compression...
+  Compression Time: 1.758 ms
+  Compressed Size: 31451474
+  Achieved Ratio: 17.07
+Throughput Statistics:
+  Profiling Throughput:    261.66 GB/s
+  Compression Throughput:  305.43 GB/s
+  Total (Prof+Comp) Thrpt: 140.93 GB/s
+Starting Decompression...
+  Decompression Time: 1.195 ms
+  Decompression Throughput: 449.42 GB/s
+Verification Results:
+  Max Error: 8.405151e-01
+  PSNR: 90.09 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:16
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=33554432 ratio=16 rate=2 rmse=2.209 nrmse=0.0001603 maxe=2122 psnr=69.88
+Encode elapsed time: 0.01282 (s)
+# encode3 rate: 39.01 (GB / sec) 
+Decode elapsed time: 0.00293 (s)
+# decode3 rate: 170.94 (GB / sec) 128
+BENCH_START:NYX:MILIO-o:32
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/SDRBENCH-EXASKY-NYX-512x512x512/dark_matter_density.f32
+  Dims: 512x512x512
+  Elements: 134217728
+  Target Ratio: 32.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 13778.934570
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 2.275 ms
+  Selected AbsEB: 1.791262e+00 (RelEB: 1.300000e-04)
+  Estimated Ratio: 32.02 (Target: 32.00)
+Starting Compression...
+  Compression Time: 1.742 ms
+  Compressed Size: 16662365
+  Achieved Ratio: 32.22
+Throughput Statistics:
+  Profiling Throughput:    236.03 GB/s
+  Compression Throughput:  308.22 GB/s
+  Total (Prof+Comp) Thrpt: 133.67 GB/s
+Starting Decompression...
+  Decompression Time: 1.095 ms
+  Decompression Throughput: 490.33 GB/s
+Verification Results:
+  Max Error: 1.791262e+00
+  PSNR: 86.69 dB
+  Compliance: PASS
+BENCH_START:NYX:cuZFP:32
+type=float nx=512 ny=512 nz=512 nw=1 raw=536870912 zfp=16777216 ratio=32 rate=1 rmse=3.938 nrmse=0.0002858 maxe=4413 psnr=64.86
+Encode elapsed time: 0.01213 (s)
+# encode3 rate: 41.23 (GB / sec) 
+Decode elapsed time: 0.00210 (s)
+# decode3 rate: 238.24 (GB / sec) 64
+BENCH_START:SYNTHESIS:MILIO-o:2
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 2.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.371 ms
+  Selected AbsEB: 2.061340e-08 (RelEB: 1.000000e-06)
+  Estimated Ratio: 3.17 (Target: 2.00)
+Starting Compression...
+  Compression Time: 28.412 ms
+  Compressed Size: 2643996366
+  Achieved Ratio: 2.61
+Throughput Statistics:
+  Profiling Throughput:    397.91 GB/s
+  Compression Throughput:  243.28 GB/s
+  Total (Prof+Comp) Thrpt: 150.98 GB/s
+Starting Decompression...
+  Decompression Time: 24.410 ms
+  Decompression Throughput: 283.17 GB/s
+Verification Results:
+  Max Error: 2.142042e-08
+  PSNR: 125.92 dB
+  Compliance: PASS
+BENCH_START:SYNTHESIS:cuZFP:2
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=3456000000 ratio=2 rate=16 rmse=1.395e-08 nrmse=6.766e-07 maxe=7.506e-07 psnr=117.37
+Encode elapsed time: 0.04637 (s)
+# encode3 rate: 138.82 (GB / sec) 
+Decode elapsed time: 0.03589 (s)
+# decode3 rate: 179.37 (GB / sec) 1024
+BENCH_START:SYNTHESIS:MILIO-o:3
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 3.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.373 ms
+  Selected AbsEB: 2.061340e-08 (RelEB: 1.000000e-06)
+  Estimated Ratio: 3.17 (Target: 3.00)
+Starting Compression...
+  Compression Time: 28.435 ms
+  Compressed Size: 2643996366
+  Achieved Ratio: 2.61
+Throughput Statistics:
+  Profiling Throughput:    397.86 GB/s
+  Compression Throughput:  243.08 GB/s
+  Total (Prof+Comp) Thrpt: 150.89 GB/s
+Starting Decompression...
+  Decompression Time: 24.491 ms
+  Decompression Throughput: 282.23 GB/s
+Verification Results:
+  Max Error: 2.142042e-08
+  PSNR: 125.92 dB
+  Compliance: PASS
+BENCH_START:SYNTHESIS:cuZFP:3
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=2305125000 ratio=3 rate=10.67 rmse=5.61e-07 nrmse=2.721e-05 maxe=3.418e-05 psnr=85.28
+Encode elapsed time: 0.04590 (s)
+# encode3 rate: 140.24 (GB / sec) 
+Decode elapsed time: 0.03333 (s)
+# decode3 rate: 193.16 (GB / sec) 683
+BENCH_START:SYNTHESIS:MILIO-o:4
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 4.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.368 ms
+  Selected AbsEB: 3.092011e-07 (RelEB: 1.500000e-05)
+  Estimated Ratio: 4.18 (Target: 4.00)
+Starting Compression...
+  Compression Time: 20.460 ms
+  Compressed Size: 1990388212
+  Achieved Ratio: 3.47
+Throughput Statistics:
+  Profiling Throughput:    397.97 GB/s
+  Compression Throughput:  337.83 GB/s
+  Total (Prof+Comp) Thrpt: 182.72 GB/s
+Starting Decompression...
+  Decompression Time: 14.417 ms
+  Decompression Throughput: 479.45 GB/s
+Verification Results:
+  Max Error: 1.225055e-03
+  PSNR: 97.81 dB
+  Compliance: FAIL
+BENCH_START:SYNTHESIS:cuZFP:4
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=1728000000 ratio=4 rate=8 rmse=3.57e-06 nrmse=0.0001732 maxe=0.000207 psnr=69.21
+Encode elapsed time: 0.04539 (s)
+# encode3 rate: 141.83 (GB / sec) 
+Decode elapsed time: 0.03111 (s)
+# decode3 rate: 206.94 (GB / sec) 512
+BENCH_START:SYNTHESIS:MILIO-o:5
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 5.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.343 ms
+  Selected AbsEB: 1.319258e-06 (RelEB: 6.400000e-05)
+  Estimated Ratio: 5.03 (Target: 5.00)
+Starting Compression...
+  Compression Time: 19.485 ms
+  Compressed Size: 1641599500
+  Achieved Ratio: 4.21
+Throughput Statistics:
+  Profiling Throughput:    398.56 GB/s
+  Compression Throughput:  354.74 GB/s
+  Total (Prof+Comp) Thrpt: 187.69 GB/s
+Starting Decompression...
+  Decompression Time: 12.954 ms
+  Decompression Throughput: 533.59 GB/s
+Verification Results:
+  Max Error: 1.253477e-03
+  PSNR: 89.41 dB
+  Compliance: FAIL
+BENCH_START:SYNTHESIS:cuZFP:5
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=1383750000 ratio=5 rate=6.406 rmse=1.074e-05 nrmse=0.000521 maxe=0.0007651 psnr=59.64
+Encode elapsed time: 0.04494 (s)
+# encode3 rate: 143.26 (GB / sec) 
+Decode elapsed time: 0.03032 (s)
+# decode3 rate: 212.30 (GB / sec) 410
+BENCH_START:SYNTHESIS:MILIO-o:6
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 6.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.359 ms
+  Selected AbsEB: 4.534949e-06 (RelEB: 2.200000e-04)
+  Estimated Ratio: 6.09 (Target: 6.00)
+Starting Compression...
+  Compression Time: 19.579 ms
+  Compressed Size: 1343547383
+  Achieved Ratio: 5.14
+Throughput Statistics:
+  Profiling Throughput:    398.17 GB/s
+  Compression Throughput:  353.03 GB/s
+  Total (Prof+Comp) Thrpt: 187.12 GB/s
+Starting Decompression...
+  Decompression Time: 13.479 ms
+  Decompression Throughput: 512.79 GB/s
+Verification Results:
+  Max Error: 1.531175e-03
+  PSNR: 79.03 dB
+  Compliance: FAIL
+BENCH_START:SYNTHESIS:cuZFP:6
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=1150875000 ratio=6.01 rate=5.328 rmse=2.263e-05 nrmse=0.001098 maxe=0.00143 psnr=53.17
+Encode elapsed time: 0.04380 (s)
+# encode3 rate: 146.96 (GB / sec) 
+Decode elapsed time: 0.02956 (s)
+# decode3 rate: 217.78 (GB / sec) 341
+BENCH_START:SYNTHESIS:MILIO-o:7
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 7.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.361 ms
+  Selected AbsEB: 1.010057e-05 (RelEB: 4.900000e-04)
+  Estimated Ratio: 7.03 (Target: 7.00)
+Starting Compression...
+  Compression Time: 18.904 ms
+  Compressed Size: 1155435304
+  Achieved Ratio: 5.98
+Throughput Statistics:
+  Profiling Throughput:    398.14 GB/s
+  Compression Throughput:  365.64 GB/s
+  Total (Prof+Comp) Thrpt: 190.60 GB/s
+Starting Decompression...
+  Decompression Time: 12.275 ms
+  Decompression Throughput: 563.11 GB/s
+Verification Results:
+  Max Error: 1.111062e-03
+  PSNR: 72.11 dB
+  Compliance: FAIL
+BENCH_START:SYNTHESIS:cuZFP:7
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=988875000 ratio=6.99 rate=4.578 rmse=3.806e-05 nrmse=0.001846 maxe=0.002008 psnr=48.65
+Encode elapsed time: 0.04306 (s)
+# encode3 rate: 149.48 (GB / sec) 
+Decode elapsed time: 0.02892 (s)
+# decode3 rate: 222.57 (GB / sec) 293
+BENCH_START:SYNTHESIS:MILIO-o:8
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 8.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.324 ms
+  Selected AbsEB: 1.937660e-05 (RelEB: 9.400000e-04)
+  Estimated Ratio: 8.04 (Target: 8.00)
+Starting Compression...
+  Compression Time: 18.556 ms
+  Compressed Size: 1002058553
+  Achieved Ratio: 6.90
+Throughput Statistics:
+  Profiling Throughput:    398.97 GB/s
+  Compression Throughput:  372.48 GB/s
+  Total (Prof+Comp) Thrpt: 192.64 GB/s
+Starting Decompression...
+  Decompression Time: 11.749 ms
+  Decompression Throughput: 588.33 GB/s
+Verification Results:
+  Max Error: 1.937710e-05
+  PSNR: 66.46 dB
+  Compliance: PASS
+BENCH_START:SYNTHESIS:cuZFP:8
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=864000000 ratio=8 rate=4 rmse=5.61e-05 nrmse=0.002722 maxe=0.002899 psnr=45.28
+Encode elapsed time: 0.04323 (s)
+# encode3 rate: 148.93 (GB / sec) 
+Decode elapsed time: 0.02838 (s)
+# decode3 rate: 226.83 (GB / sec) 256
+BENCH_START:SYNTHESIS:MILIO-o:10
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 10.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.327 ms
+  Selected AbsEB: 5.153351e-05 (RelEB: 2.500000e-03)
+  Estimated Ratio: 10.09 (Target: 10.00)
+Starting Compression...
+  Compression Time: 18.285 ms
+  Compressed Size: 787328726
+  Achieved Ratio: 8.78
+Throughput Statistics:
+  Profiling Throughput:    398.91 GB/s
+  Compression Throughput:  378.01 GB/s
+  Total (Prof+Comp) Thrpt: 194.09 GB/s
+Starting Decompression...
+  Decompression Time: 11.416 ms
+  Decompression Throughput: 605.45 GB/s
+Verification Results:
+  Max Error: 1.836041e-03
+  PSNR: 57.96 dB
+  Compliance: FAIL
+BENCH_START:SYNTHESIS:cuZFP:10
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=691875000 ratio=9.99 rate=3.203 rmse=9.315e-05 nrmse=0.004519 maxe=0.004447 psnr=40.88
+Encode elapsed time: 0.04073 (s)
+# encode3 rate: 158.05 (GB / sec) 
+Decode elapsed time: 0.02747 (s)
+# decode3 rate: 234.36 (GB / sec) 205
+BENCH_START:SYNTHESIS:MILIO-o:16
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 16.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.378 ms
+  Selected AbsEB: 1.937660e-04 (RelEB: 9.400000e-03)
+  Estimated Ratio: 16.01 (Target: 16.00)
+Starting Compression...
+  Compression Time: 17.154 ms
+  Compressed Size: 475507005
+  Achieved Ratio: 14.54
+Throughput Statistics:
+  Profiling Throughput:    397.74 GB/s
+  Compression Throughput:  402.95 GB/s
+  Total (Prof+Comp) Thrpt: 200.16 GB/s
+Starting Decompression...
+  Decompression Time: 9.039 ms
+  Decompression Throughput: 764.66 GB/s
+Verification Results:
+  Max Error: 1.937672e-04
+  PSNR: 47.07 dB
+  Compliance: PASS
+BENCH_START:SYNTHESIS:cuZFP:16
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=432000000 ratio=16 rate=2 rmse=0.000184 nrmse=0.008929 maxe=0.00942 psnr=34.96
+Encode elapsed time: 0.03430 (s)
+# encode3 rate: 187.67 (GB / sec) 
+Decode elapsed time: 0.02453 (s)
+# decode3 rate: 262.40 (GB / sec) 128
+BENCH_START:SYNTHESIS:MILIO-o:32
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/synthetic_truss_with_five_defects_1200x1200x1200_float32.raw
+  Dims: 1200x1200x1200
+  Elements: 1728000000
+  Target Ratio: 32.00
+  Mode: outlier
+  Sample Rate: 100
+Data Range: 0.020613
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 17.347 ms
+  Selected AbsEB: 1.010057e-03 (RelEB: 4.900000e-02)
+  Estimated Ratio: 32.55 (Target: 32.00)
+Starting Compression...
+  Compression Time: 15.633 ms
+  Compressed Size: 193296729
+  Achieved Ratio: 35.76
+Throughput Statistics:
+  Profiling Throughput:    398.46 GB/s
+  Compression Throughput:  442.15 GB/s
+  Total (Prof+Comp) Thrpt: 209.59 GB/s
+Starting Decompression...
+  Decompression Time: 7.213 ms
+  Decompression Throughput: 958.25 GB/s
+Verification Results:
+  Max Error: 1.010058e-03
+  PSNR: 35.02 dB
+  Compliance: PASS
+BENCH_START:SYNTHESIS:cuZFP:32
+type=float nx=1200 ny=1200 nz=1200 nw=1 raw=6912000000 zfp=216000000 ratio=32 rate=1 rmse=0.0003298 nrmse=0.016 maxe=0.01228 psnr=29.90
+Encode elapsed time: 0.02467 (s)
+# encode3 rate: 260.92 (GB / sec) 
+Decode elapsed time: 0.01627 (s)
+# decode3 rate: 395.60 (GB / sec) 64
+BENCH_START:QMCPACK:MILIO-o:2
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 2.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 5.333 ms
+  Selected AbsEB: 3.301002e-05 (RelEB: 1.000000e-06)
+Starting Compression...
+  Compression Time: 3.828 ms
+  Compressed Size: 296815357 bytes
+  Achieved Ratio: 2.13
+Throughput Statistics:
+  Profiling Throughput:    118.27 GB/s
+  Compression Throughput:  164.77 GB/s
+  Total (Prof+Comp) Thrpt: 68.85 GB/s
+Starting Decompression...
+  Decompression Time: 2.510 ms
+  Decompression Throughput: 251.33 GB/s
+Verification Results:
+  Max Error: 3.337860e-05
+  PSNR: 124.78 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:2
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=315368640 ratio=2 rate=16 rmse=0.0001525 nrmse=4.62e-06 maxe=0.00977 psnr=100.69
+Encode elapsed time: 0.01419 (s)
+# encode1 rate: 41.41 (GB / sec) 64
+Decode elapsed time: 0.00549 (s)
+# decode1 rate: 106.99 (GB / sec) 64
+BENCH_START:QMCPACK:MILIO-o:3
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 3.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 4.307 ms
+  Selected AbsEB: 8.252504e-04 (RelEB: 2.500000e-05)
+Starting Compression...
+  Compression Time: 2.616 ms
+  Compressed Size: 205422658 bytes
+  Achieved Ratio: 3.07
+Throughput Statistics:
+  Profiling Throughput:    146.44 GB/s
+  Compression Throughput:  241.11 GB/s
+  Total (Prof+Comp) Thrpt: 91.10 GB/s
+Starting Decompression...
+  Decompression Time: 1.842 ms
+  Decompression Throughput: 342.40 GB/s
+Verification Results:
+  Max Error: 8.258820e-04
+  PSNR: 96.94 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:3
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=211888312 ratio=2.98 rate=10.75 rmse=0.005746 nrmse=0.0001741 maxe=0.4307 psnr=69.16
+Encode elapsed time: 0.01606 (s)
+# encode1 rate: 36.58 (GB / sec) 43
+Decode elapsed time: 0.00487 (s)
+# decode1 rate: 120.58 (GB / sec) 43
+BENCH_START:QMCPACK:MILIO-o:4
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 4.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 4.373 ms
+  Selected AbsEB: 5.281602e-03 (RelEB: 1.600000e-04)
+Starting Compression...
+  Compression Time: 2.239 ms
+  Compressed Size: 153589862 bytes
+  Achieved Ratio: 4.11
+Throughput Statistics:
+  Profiling Throughput:    144.25 GB/s
+  Compression Throughput:  281.74 GB/s
+  Total (Prof+Comp) Thrpt: 95.40 GB/s
+Starting Decompression...
+  Decompression Time: 1.782 ms
+  Decompression Throughput: 353.94 GB/s
+Verification Results:
+  Max Error: 5.281925e-03
+  PSNR: 81.10 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:4
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=157684320 ratio=4 rate=8 rmse=0.03933 nrmse=0.001191 maxe=2.684 psnr=52.46
+Encode elapsed time: 0.01127 (s)
+# encode1 rate: 52.15 (GB / sec) 32
+Decode elapsed time: 0.00425 (s)
+# decode1 rate: 138.24 (GB / sec) 32
+BENCH_START:QMCPACK:MILIO-o:5
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 5.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 4.297 ms
+  Selected AbsEB: 1.518461e-02 (RelEB: 4.600000e-04)
+Starting Compression...
+  Compression Time: 2.116 ms
+  Compressed Size: 124733626 bytes
+  Achieved Ratio: 5.06
+Throughput Statistics:
+  Profiling Throughput:    146.80 GB/s
+  Compression Throughput:  298.06 GB/s
+  Total (Prof+Comp) Thrpt: 98.36 GB/s
+Starting Decompression...
+  Decompression Time: 1.687 ms
+  Decompression Throughput: 373.85 GB/s
+Verification Results:
+  Max Error: 1.518536e-02
+  PSNR: 72.15 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:5
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=128118512 ratio=4.92 rate=6.5 rmse=0.109 nrmse=0.003303 maxe=6.924 psnr=43.60
+Encode elapsed time: 0.01264 (s)
+# encode1 rate: 46.47 (GB / sec) 26
+Decode elapsed time: 0.00383 (s)
+# decode1 rate: 153.20 (GB / sec) 26
+BENCH_START:QMCPACK:MILIO-o:6
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 6.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 4.313 ms
+  Selected AbsEB: 3.201972e-02 (RelEB: 9.700000e-04)
+Starting Compression...
+  Compression Time: 2.078 ms
+  Compressed Size: 104589282 bytes
+  Achieved Ratio: 6.03
+Throughput Statistics:
+  Profiling Throughput:    146.23 GB/s
+  Compression Throughput:  303.46 GB/s
+  Total (Prof+Comp) Thrpt: 98.68 GB/s
+Starting Decompression...
+  Decompression Time: 1.608 ms
+  Decompression Throughput: 392.33 GB/s
+Verification Results:
+  Max Error: 3.202009e-02
+  PSNR: 65.88 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:6
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=103480336 ratio=6.1 rate=5.25 rmse=0.2479 nrmse=0.007511 maxe=14.11 psnr=36.47
+Encode elapsed time: 0.01189 (s)
+# encode1 rate: 49.41 (GB / sec) 21
+Decode elapsed time: 0.00329 (s)
+# decode1 rate: 178.30 (GB / sec) 21
+BENCH_START:QMCPACK:MILIO-o:7
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 7.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 11.069 ms
+  Selected AbsEB: 6.271903e-02 (RelEB: 1.900000e-03)
+Starting Compression...
+  Compression Time: 3.597 ms
+  Compressed Size: 86884675 bytes
+  Achieved Ratio: 7.26
+Throughput Statistics:
+  Profiling Throughput:    56.98 GB/s
+  Compression Throughput:  175.37 GB/s
+  Total (Prof+Comp) Thrpt: 43.01 GB/s
+Starting Decompression...
+  Decompression Time: 1.485 ms
+  Decompression Throughput: 424.71 GB/s
+Verification Results:
+  Max Error: 6.271911e-02
+  PSNR: 60.30 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:7
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=88697432 ratio=7.11 rate=4.5 rmse=0.4631 nrmse=0.01403 maxe=47.19 psnr=31.04
+Encode elapsed time: 0.01243 (s)
+# encode1 rate: 47.26 (GB / sec) 18
+Decode elapsed time: 0.00317 (s)
+# decode1 rate: 185.34 (GB / sec) 18
+BENCH_START:QMCPACK:MILIO-o:8
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 8.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 4.326 ms
+  Selected AbsEB: 9.242804e-02 (RelEB: 2.800000e-03)
+Starting Compression...
+  Compression Time: 2.029 ms
+  Compressed Size: 77298155 bytes
+  Achieved Ratio: 8.16
+Throughput Statistics:
+  Profiling Throughput:    145.81 GB/s
+  Compression Throughput:  310.80 GB/s
+  Total (Prof+Comp) Thrpt: 99.25 GB/s
+Starting Decompression...
+  Decompression Time: 1.410 ms
+  Decompression Throughput: 447.43 GB/s
+Verification Results:
+  Max Error: 9.242821e-02
+  PSNR: 57.09 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:8
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=78842160 ratio=8 rate=4 rmse=0.7265 nrmse=0.02201 maxe=47.58 psnr=27.13
+Encode elapsed time: 0.00946 (s)
+# encode1 rate: 62.12 (GB / sec) 16
+Decode elapsed time: 0.00216 (s)
+# decode1 rate: 271.75 (GB / sec) 16
+BENCH_START:QMCPACK:MILIO-o:10
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 10.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 5.174 ms
+  Selected AbsEB: 1.815551e-01 (RelEB: 5.500000e-03)
+Starting Compression...
+  Compression Time: 1.996 ms
+  Compressed Size: 62199640 bytes
+  Achieved Ratio: 10.14
+Throughput Statistics:
+  Profiling Throughput:    121.90 GB/s
+  Compression Throughput:  315.95 GB/s
+  Total (Prof+Comp) Thrpt: 87.96 GB/s
+Starting Decompression...
+  Decompression Time: 1.537 ms
+  Decompression Throughput: 410.38 GB/s
+Verification Results:
+  Max Error: 1.815551e-01
+  PSNR: 51.59 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:10
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=64059256 ratio=9.85 rate=3.25 rmse=1.035 nrmse=0.03136 maxe=47.13 psnr=24.05
+Encode elapsed time: 0.00910 (s)
+# encode1 rate: 64.59 (GB / sec) 13
+Decode elapsed time: 0.00146 (s)
+# decode1 rate: 403.11 (GB / sec) 13
+BENCH_START:QMCPACK:MILIO-o:16
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 16.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 4.330 ms
+  Selected AbsEB: 6.271903e-01 (RelEB: 1.900000e-02)
+Starting Compression...
+  Compression Time: 1.943 ms
+  Compressed Size: 37790372 bytes
+  Achieved Ratio: 16.69
+Throughput Statistics:
+  Profiling Throughput:    145.66 GB/s
+  Compression Throughput:  324.59 GB/s
+  Total (Prof+Comp) Thrpt: 100.54 GB/s
+Starting Decompression...
+  Decompression Time: 1.118 ms
+  Decompression Throughput: 564.01 GB/s
+Verification Results:
+  Max Error: 6.271904e-01
+  PSNR: 42.18 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:16
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=44348720 ratio=14.2 rate=2.25 rmse=0.7496 nrmse=0.02271 maxe=16.51 psnr=26.86
+Encode elapsed time: 0.00753 (s)
+# encode1 rate: 77.99 (GB / sec) 9
+Decode elapsed time: 0.00055 (s)
+# decode1 rate: 1075.39 (GB / sec) 9
+BENCH_START:QMCPACK:MILIO-o:32
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/dataset/115x69x69x288/einspline_115_69_69_288.f32
+  Output File: (none)
+  Elements: 157684320
+  Target Ratio: 32.00
+  Mode: outlier
+Data Range: 33.010017 (Min: -16.505009, Max: 16.505009)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 5.333 ms
+  Selected AbsEB: 1.221371e+00 (RelEB: 3.700000e-02)
+Starting Compression...
+  Compression Time: 1.762 ms
+  Compressed Size: 17977496 bytes
+  Achieved Ratio: 35.08
+Throughput Statistics:
+  Profiling Throughput:    118.27 GB/s
+  Compression Throughput:  358.02 GB/s
+  Total (Prof+Comp) Thrpt: 88.90 GB/s
+Starting Decompression...
+  Decompression Time: 0.894 ms
+  Decompression Throughput: 705.54 GB/s
+Verification Results:
+  Max Error: 1.221371e+00
+  PSNR: 38.76 dB
+  Error Bound Compliance: PASS
+BENCH_START:QMCPACK:cuZFP:32
+type=float nx=157684320 ny=1 nz=1 nw=1 raw=630737280 zfp=44348720 ratio=14.2 rate=2.25 rmse=0.7496 nrmse=0.02271 maxe=16.51 psnr=26.86
+Encode elapsed time: 0.00843 (s)
+# encode1 rate: 69.69 (GB / sec) 9
+Decode elapsed time: 0.00054 (s)
+# decode1 rate: 1093.32 (GB / sec) 9
+BENCH_START:RTM:MILIO-o:2
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 2.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 8.845 ms
+  Selected AbsEB: 5.035615e-05 (RelEB: 1.000000e-06)
+Starting Compression...
+  Compression Time: 6.305 ms
+  Compressed Size: 465967806 bytes
+  Achieved Ratio: 3.07
+Throughput Statistics:
+  Profiling Throughput:    161.75 GB/s
+  Compression Throughput:  226.92 GB/s
+  Total (Prof+Comp) Thrpt: 94.44 GB/s
+Starting Decompression...
+  Decompression Time: 5.535 ms
+  Decompression Throughput: 258.45 GB/s
+Verification Results:
+  Max Error: 5.149841e-05
+  PSNR: 125.67 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:2
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=715309056 ratio=2 rate=16 rmse=7.8e-05 nrmse=1.549e-06 maxe=0.006035 psnr=110.18
+Encode elapsed time: 0.02167 (s)
+# encode1 rate: 61.48 (GB / sec) 64
+Decode elapsed time: 0.01089 (s)
+# decode1 rate: 122.30 (GB / sec) 64
+BENCH_START:RTM:MILIO-o:3
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 3.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 11.068 ms
+  Selected AbsEB: 5.035615e-05 (RelEB: 1.000000e-06)
+Starting Compression...
+  Compression Time: 7.502 ms
+  Compressed Size: 465967806 bytes
+  Achieved Ratio: 3.07
+Throughput Statistics:
+  Profiling Throughput:    129.26 GB/s
+  Compression Throughput:  190.69 GB/s
+  Total (Prof+Comp) Thrpt: 77.04 GB/s
+Starting Decompression...
+  Decompression Time: 6.960 ms
+  Decompression Throughput: 205.55 GB/s
+Verification Results:
+  Max Error: 5.149841e-05
+  PSNR: 125.67 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:3
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=480598272 ratio=2.98 rate=10.75 rmse=0.002938 nrmse=5.834e-05 maxe=0.2284 psnr=78.66
+Encode elapsed time: 0.02357 (s)
+# encode1 rate: 56.54 (GB / sec) 43
+Decode elapsed time: 0.00903 (s)
+# decode1 rate: 147.52 (GB / sec) 43
+BENCH_START:RTM:MILIO-o:4
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 4.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 11.101 ms
+  Selected AbsEB: 4.028492e-04 (RelEB: 8.000000e-06)
+Starting Compression...
+  Compression Time: 6.506 ms
+  Compressed Size: 352398826 bytes
+  Achieved Ratio: 4.06
+Throughput Statistics:
+  Profiling Throughput:    128.88 GB/s
+  Compression Throughput:  219.90 GB/s
+  Total (Prof+Comp) Thrpt: 81.26 GB/s
+Starting Decompression...
+  Decompression Time: 6.944 ms
+  Decompression Throughput: 206.03 GB/s
+Verification Results:
+  Max Error: 4.043579e-04
+  PSNR: 107.64 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:4
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=357654528 ratio=4 rate=8 rmse=0.01773 nrmse=0.0003521 maxe=1.415 psnr=63.05
+Encode elapsed time: 0.01684 (s)
+# encode1 rate: 79.11 (GB / sec) 32
+Decode elapsed time: 0.00758 (s)
+# decode1 rate: 175.68 (GB / sec) 32
+BENCH_START:RTM:MILIO-o:5
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 5.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 11.091 ms
+  Selected AbsEB: 1.510684e-03 (RelEB: 3.000000e-05)
+Starting Compression...
+  Compression Time: 6.071 ms
+  Compressed Size: 281275025 bytes
+  Achieved Ratio: 5.09
+Throughput Statistics:
+  Profiling Throughput:    128.98 GB/s
+  Compression Throughput:  235.65 GB/s
+  Total (Prof+Comp) Thrpt: 83.36 GB/s
+Starting Decompression...
+  Decompression Time: 6.656 ms
+  Decompression Throughput: 214.94 GB/s
+Verification Results:
+  Max Error: 1.512527e-03
+  PSNR: 96.21 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:5
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=290594304 ratio=4.92 rate=6.5 rmse=0.04734 nrmse=0.0009402 maxe=3.854 psnr=54.52
+Encode elapsed time: 0.01910 (s)
+# encode1 rate: 69.74 (GB / sec) 26
+Decode elapsed time: 0.00661 (s)
+# decode1 rate: 201.54 (GB / sec) 26
+BENCH_START:RTM:MILIO-o:6
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 6.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 10.491 ms
+  Selected AbsEB: 3.524931e-03 (RelEB: 7.000000e-05)
+Starting Compression...
+  Compression Time: 5.294 ms
+  Compressed Size: 237504606 bytes
+  Achieved Ratio: 6.02
+Throughput Statistics:
+  Profiling Throughput:    136.37 GB/s
+  Compression Throughput:  270.21 GB/s
+  Total (Prof+Comp) Thrpt: 90.63 GB/s
+Starting Decompression...
+  Decompression Time: 5.441 ms
+  Decompression Throughput: 262.91 GB/s
+Verification Results:
+  Max Error: 3.525257e-03
+  PSNR: 88.90 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:6
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=234710784 ratio=6.1 rate=5.25 rmse=0.1135 nrmse=0.002255 maxe=7.411 psnr=46.92
+Encode elapsed time: 0.01600 (s)
+# encode1 rate: 83.27 (GB / sec) 21
+Decode elapsed time: 0.00542 (s)
+# decode1 rate: 245.83 (GB / sec) 21
+BENCH_START:RTM:MILIO-o:7
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 7.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 8.802 ms
+  Selected AbsEB: 8.056984e-03 (RelEB: 1.600000e-04)
+Starting Compression...
+  Compression Time: 4.610 ms
+  Compressed Size: 196729638 bytes
+  Achieved Ratio: 7.27
+Throughput Statistics:
+  Profiling Throughput:    162.53 GB/s
+  Compression Throughput:  310.32 GB/s
+  Total (Prof+Comp) Thrpt: 106.67 GB/s
+Starting Decompression...
+  Decompression Time: 4.003 ms
+  Decompression Throughput: 357.37 GB/s
+Verification Results:
+  Max Error: 8.057594e-03
+  PSNR: 81.78 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:7
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=201180672 ratio=7.11 rate=4.5 rmse=0.1992 nrmse=0.003957 maxe=14.19 psnr=42.03
+Encode elapsed time: 0.01510 (s)
+# encode1 rate: 88.21 (GB / sec) 18
+Decode elapsed time: 0.00450 (s)
+# decode1 rate: 295.79 (GB / sec) 18
+BENCH_START:RTM:MILIO-o:8
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 8.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 8.755 ms
+  Selected AbsEB: 1.258904e-02 (RelEB: 2.500000e-04)
+Starting Compression...
+  Compression Time: 4.475 ms
+  Compressed Size: 175916512 bytes
+  Achieved Ratio: 8.13
+Throughput Statistics:
+  Profiling Throughput:    163.41 GB/s
+  Compression Throughput:  319.66 GB/s
+  Total (Prof+Comp) Thrpt: 108.14 GB/s
+Starting Decompression...
+  Decompression Time: 3.699 ms
+  Decompression Throughput: 386.74 GB/s
+Verification Results:
+  Max Error: 1.258945e-02
+  PSNR: 77.95 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:8
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=178827264 ratio=8 rate=4 rmse=0.3084 nrmse=0.006124 maxe=24 psnr=38.24
+Encode elapsed time: 0.01232 (s)
+# encode1 rate: 108.14 (GB / sec) 16
+Decode elapsed time: 0.00396 (s)
+# decode1 rate: 336.87 (GB / sec) 16
+BENCH_START:RTM:MILIO-o:10
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 10.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 8.808 ms
+  Selected AbsEB: 2.769588e-02 (RelEB: 5.500000e-04)
+Starting Compression...
+  Compression Time: 4.302 ms
+  Compressed Size: 141934896 bytes
+  Achieved Ratio: 10.08
+Throughput Statistics:
+  Profiling Throughput:    162.43 GB/s
+  Compression Throughput:  332.56 GB/s
+  Total (Prof+Comp) Thrpt: 109.13 GB/s
+Starting Decompression...
+  Decompression Time: 3.306 ms
+  Decompression Throughput: 432.74 GB/s
+Verification Results:
+  Max Error: 2.769661e-02
+  PSNR: 71.20 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:10
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=145297152 ratio=9.85 rate=3.25 rmse=0.6133 nrmse=0.01218 maxe=26.59 psnr=32.27
+Encode elapsed time: 0.01245 (s)
+# encode1 rate: 107.05 (GB / sec) 13
+Decode elapsed time: 0.00303 (s)
+# decode1 rate: 439.21 (GB / sec) 13
+BENCH_START:RTM:MILIO-o:16
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 16.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 8.935 ms
+  Selected AbsEB: 1.409972e-01 (RelEB: 2.800000e-03)
+Starting Compression...
+  Compression Time: 4.000 ms
+  Compressed Size: 87751096 bytes
+  Achieved Ratio: 16.30
+Throughput Statistics:
+  Profiling Throughput:    160.11 GB/s
+  Compression Throughput:  357.68 GB/s
+  Total (Prof+Comp) Thrpt: 110.60 GB/s
+Starting Decompression...
+  Decompression Time: 2.659 ms
+  Decompression Throughput: 538.07 GB/s
+Verification Results:
+  Max Error: 1.409979e-01
+  PSNR: 57.50 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:16
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=100590336 ratio=14.2 rate=2.25 rmse=0.9925 nrmse=0.01971 maxe=27.97 psnr=28.09
+Encode elapsed time: 0.00860 (s)
+# encode1 rate: 155.01 (GB / sec) 9
+Decode elapsed time: 0.00122 (s)
+# decode1 rate: 1089.28 (GB / sec) 9
+BENCH_START:RTM:MILIO-o:32
+Configuration:
+  Input File: /scratch/bfrq/bzhang28/pressure_3000
+  Output File: (none)
+  Elements: 357654528
+  Target Ratio: 32.00
+  Mode: outlier
+Data Range: 50.356152 (Min: -27.973200, Max: 22.382952)
+Warming up GPU...
+Warmup complete.
+Starting Profiling...
+  Profiling Time: 11.087 ms
+  Selected AbsEB: 5.539176e-01 (RelEB: 1.100000e-02)
+Starting Compression...
+  Compression Time: 3.788 ms
+  Compressed Size: 44443533 bytes
+  Achieved Ratio: 32.19
+Throughput Statistics:
+  Profiling Throughput:    129.04 GB/s
+  Compression Throughput:  377.66 GB/s
+  Total (Prof+Comp) Thrpt: 96.18 GB/s
+Starting Decompression...
+  Decompression Time: 1.846 ms
+  Decompression Throughput: 774.99 GB/s
+Verification Results:
+  Max Error: 5.539179e-01
+  PSNR: 47.77 dB
+  Error Bound Compliance: PASS
+BENCH_START:RTM:cuZFP:32
+type=float nx=357654528 ny=1 nz=1 nw=1 raw=1430618112 zfp=100590336 ratio=14.2 rate=2.25 rmse=0.9925 nrmse=0.01971 maxe=27.97 psnr=28.09
+Encode elapsed time: 0.00906 (s)
+# encode1 rate: 147.04 (GB / sec) 9
+Decode elapsed time: 0.00123 (s)
+# decode1 rate: 1086.72 (GB / sec) 9

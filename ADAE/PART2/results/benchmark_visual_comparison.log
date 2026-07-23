@@ -1,0 +1,13 @@
+VIS_START:milio8
+  Selected AbsEB: ... (RelEB: ...)
+  Achieved Ratio: 8.06
+  PSNR: 67.50 dB
+  Written reconstructed data to fig15_data/milio_cr8.dat
+VIS_START:milio16
+  Achieved Ratio: 16.03
+  PSNR: 34.97 dB
+  Written reconstructed data to fig15_data/milio_cr16.dat
+VIS_START:cuzfp8
+type=float nx=1800 ny=3600 nz=1 nw=1 raw=25920000 zfp=3240000 ratio=8 rate=4 rmse=0.007426 nrmse=0.008306 maxe=0.1313 psnr=35.59
+VIS_START:cuzfp16
+type=float nx=1800 ny=3600 nz=1 nw=1 raw=25920000 zfp=1620000 ratio=16 rate=2 rmse=0.07516 nrmse=0.08407 maxe=0.9433 psnr=15.49
