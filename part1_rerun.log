@@ -1,0 +1,123 @@
+== ADAE PART1 ==
+  repo      : /u/bzhang28/MILIO
+  data root : /scratch/bfrq/bzhang28
+  zfp       : /u/bzhang28/zfp/build/bin/zfp
+  slurm     : bfrq-delta-gpu / gpuA100x4
+  output    : /u/bzhang28/MILIO/ADAE/PART1/results
+== [1/4] Building fixed-ratio CLIs ==
+[ 31%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_kernels_1D_f32.cu.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+[ 31%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_kernels_3D_f32.cu.o
+[ 31%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_kernels_1D_f64.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_entry_1D_f32.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_entry_2D_f32.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_entry_2D_f64.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_kernels_3D_f64.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_utility.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_entry_3D_f64.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_timer.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_entry_1D_f64.cu.o
+[ 78%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_entry_3D_f32.cu.o
+[ 31%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_kernels_2D_f32.cu.o
+[ 31%] Building CUDA object CMakeFiles/cuSZp_static.dir/src/cuSZp_kernels_2D_f64.cu.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2792): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2982): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2792): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2982): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2792): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2982): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2792): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2982): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2792): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2982): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2792): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2982): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2792): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/u/bzhang28/MILIO/src/cuSZp_kernels_3D_f32.cu(2982): warning #177-D: variable "block_idx_x" was declared but never referenced
+              uint block_idx_x = (current_block_idx % block_stride_per_slice) % dimxBlock;
+                   ^
+
+[ 84%] Linking CUDA static library libcuSZp.a
+[ 84%] Built target cuSZp_static
+[ 89%] Building CXX object examples/CMakeFiles/cuszp_fixed_ratio_cli.dir/cuszp_fixed_ratio_cli.cpp.o
+[ 94%] Linking CUDA device code CMakeFiles/cuszp_fixed_ratio_cli.dir/cmake_device_link.o
+[100%] Linking CXX executable bin/cuszp_fixed_ratio_cli
+[100%] Built target cuszp_fixed_ratio_cli
+[ 84%] Built target cuSZp_static
+[ 89%] Building CXX object examples/CMakeFiles/cuszp_fixed_ratio_cli_2d.dir/cuszp_fixed_ratio_cli-2d.cpp.o
+/u/bzhang28/MILIO/examples/cuszp_fixed_ratio_cli-2d.cpp: In function ‘int main(int, char**)’:
+/u/bzhang28/MILIO/examples/cuszp_fixed_ratio_cli-2d.cpp:226:43: error: ‘time_profile’ was not declared in this scope
+  226 |     printf("  Profiling Time: %.3f ms\n", time_profile);
+      |                                           ^~~~~~~~~~~~
+make[3]: *** [examples/CMakeFiles/cuszp_fixed_ratio_cli_2d.dir/build.make:76: examples/CMakeFiles/cuszp_fixed_ratio_cli_2d.dir/cuszp_fixed_ratio_cli-2d.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Makefile2:664: examples/CMakeFiles/cuszp_fixed_ratio_cli_2d.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:671: examples/CMakeFiles/cuszp_fixed_ratio_cli_2d.dir/rule] Error 2
+make: *** [Makefile:439: cuszp_fixed_ratio_cli_2d] Error 2

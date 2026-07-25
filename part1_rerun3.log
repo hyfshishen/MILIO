@@ -1,0 +1,61 @@
+== ADAE PART1 ==
+  repo      : /u/bzhang28/MILIO
+  data root : /scratch/bfrq/bzhang28
+  zfp       : /u/bzhang28/zfp/build/bin/zfp
+  slurm     : bfrq-delta-gpu / gpuA100x4
+  output    : /u/bzhang28/MILIO/ADAE/PART1/results
+== [1/4] Building fixed-ratio CLIs ==
+[ 84%] Built target cuSZp_static
+[ 89%] Building CXX object examples/CMakeFiles/cuszp_fixed_ratio_cli.dir/cuszp_fixed_ratio_cli.cpp.o
+[ 94%] Linking CUDA device code CMakeFiles/cuszp_fixed_ratio_cli.dir/cmake_device_link.o
+[100%] Linking CXX executable bin/cuszp_fixed_ratio_cli
+[100%] Built target cuszp_fixed_ratio_cli
+[ 84%] Built target cuSZp_static
+[100%] Built target cuszp_fixed_ratio_cli_2d
+[ 84%] Built target cuSZp_static
+[100%] Built target cuszp_fixed_ratio_cli_3d
+== [2/4] Configuring benchmark drivers for this site ==
+== [3/4] Running MILIO fixed-ratio benchmark (all datasets) ==
+Generating benchmark script...
+for CESM, found 33 files.
+for NYX, found 6 files.
+for HACC, found 6 files.
+for EXAFEL, found 1 files.
+for QMCPACK, found 2 files.
+for RTM, found 3 files.
+for SYNTHESIS, found 1 files.
+for EXAALT, found 6 files.
+for SCALE, found 12 files.
+Generated 420 commands.
+Submitting job...
+Job complete. Parsing results...
+Report generated: benchmark_fixratio_all_report.md
+== [3/4] Running cuZFP baseline benchmark (all datasets) ==
+Generated 210 commands.
+Submitting job...
+Job complete. Parsing...
+== [4/4] Rendering figures ==
+Parsing logs...
+FixRatio - Models: ['CESM', 'NYX', 'HACC', 'EXAFEL', 'QMCPACK', 'RTM', 'SYNTH', 'EXAALT', 'SCALE']
+cuZFP - Models: ['CESM', 'NYX', 'HACC', 'EXAFEL', 'QMCPACK', 'RTM', 'SYNTH', 'EXAALT', 'SCALE']
+Generating charts...
+Generated chart: benchmark_charts/chart_summary_compression.pdf
+Generated chart: benchmark_charts/chart_summary_decompression.pdf
+Parsing logs...
+Generating charts...
+Generated chart: benchmark_charts/chart_breakdown_millio_p.pdf
+Generated chart: benchmark_charts/chart_breakdown_millio_o.pdf
+Parsing logs...
+Generating charts...
+Generated chart: benchmark_charts/chart_overhead_normalized.pdf
+Parsing logs...
+Generating chart with Ratio=4.0...
+Found fields: ['1000', '2000', '3000']
+Generated chart: benchmark_charts/chart_rtm_overhead_trend.pdf
+== Done. Figures: ==
+/u/bzhang28/MILIO/ADAE/PART1/results/benchmark_charts/chart_breakdown_millio_o.pdf
+/u/bzhang28/MILIO/ADAE/PART1/results/benchmark_charts/chart_breakdown_millio_p.pdf
+/u/bzhang28/MILIO/ADAE/PART1/results/benchmark_charts/chart_overhead_normalized.pdf
+/u/bzhang28/MILIO/ADAE/PART1/results/benchmark_charts/chart_rtm_overhead_trend.pdf
+/u/bzhang28/MILIO/ADAE/PART1/results/benchmark_charts/chart_summary_compression.pdf
+/u/bzhang28/MILIO/ADAE/PART1/results/benchmark_charts/chart_summary_decompression.pdf

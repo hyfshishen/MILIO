@@ -263,10 +263,6 @@ int main(int argc, char** argv) {
 
     // --- Step 2: Compression ---
     printf("Starting Compression...\n");
-
-    // Prepare input outside the timed region so the compression timer measures
-    // the fused kernel only (consistent with the profiling/decompression timers
-    // and with cuSZp's reported kernel throughput).
     cudaMemcpyAsync(d_data, h_data.data(), num_elements * sizeof(float), cudaMemcpyHostToDevice, stream);
     cudaStreamSynchronize(stream);
 

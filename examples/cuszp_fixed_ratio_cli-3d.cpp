@@ -240,16 +240,14 @@ int main(int argc, char** argv) {
 
 
     
-    // printf("Target Ratio: %.2f (Adjusted for Padding: %.2f)\n", target_ratio, adjusted_target_ratio);
-
+    
     int best_idx = pick_best_eb_from_finalrow_64(h_final_row, sample_per_eb, adjusted_target_ratio);
     float relEB = PRO_128_REL_EB[best_idx];
     float absEB = relEB * range;
 
-    float time_profile = timer_GPU.GetCounter();
+   
     
-    // Re-parse to get sampled bytes for the chosen EB to report Estimated Ratio
-    // (We could optimize this by efficient helper usage, but simple re-parse is fine for CLI)
+
     int selected_sampled_bytes = 0;
     {
         uint4 q = h_final_row[best_idx / 4];
@@ -260,9 +258,9 @@ int main(int argc, char** argv) {
         else selected_sampled_bytes = (int)q.w;
     }
     
-    // Calculate Estimated Ratio relative to UNPADDED original
     double est_padded_cmp_size = (double)selected_sampled_bytes / (double)sample_per_eb * (double)total_blocks;
     double est_ratio_unpadded = unpadded_size / est_padded_cmp_size; // unpadded_size is in bytes (num_elements*4)
+    float time_profile = timer_GPU.GetCounter();
 
     printf("  Profiling Time: %.3f ms\n", time_profile);
     printf("  Selected AbsEB: %.6e (RelEB: %.6e)\n", absEB, relEB);
@@ -272,14 +270,13 @@ int main(int argc, char** argv) {
     printf("Starting Compression...\n");
     size_t compressed_size = 0;
 
-    // Prepare inputs outside the timed region: upload the (intact) host data and
-    // zero the compressed buffer. The compression timer then measures the fused
-    // kernel only — consistent with the profiling/decompression timers above.
-    CHECK_CUDA(cudaMemcpyAsync(d_data, h_data.data(), num_elements * sizeof(float), cudaMemcpyHostToDevice, stream));
-    CHECK_CUDA(cudaMemsetAsync(d_compressed, 0, num_elements * sizeof(float), stream));
-    cudaStreamSynchronize(stream);
 
+    // d_data is unchanged since the initial H2D load (all kernels take oriData as
+    // const), and the compressor zeroes its own internal buffers, so no re-copy or
+    // memset is needed here. Time the compression kernel only (as the 1D CLI does).
     timer_GPU.StartCounter();
+
+    
     if (mode == CUSZP_MODE_PLAIN)
         cuSZp_compress_3D_plain_f32(d_data, d_compressed, num_elements, &compressed_size, dims, absEB, stream);
     else

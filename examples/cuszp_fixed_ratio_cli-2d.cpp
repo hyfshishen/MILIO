@@ -207,10 +207,11 @@ int main(int argc, char** argv) {
     int best_idx = pick_best_eb_from_finalrow_64(h_final_row, sample_per_eb, adjusted_target_ratio);
     float relEB = PRO_128_REL_EB[best_idx];
     float absEB = relEB * range;
+    
 
-    float time_profile = timer_GPU.GetCounter();
+    
 
-    // Estimated ratio relative to unpadded file size
+
     int selected_sampled_bytes = 0;
     {
         uint4 q = h_final_row[best_idx / 4];
@@ -222,25 +223,23 @@ int main(int argc, char** argv) {
     }
     double est_padded_cmp_size = (double)selected_sampled_bytes / (double)sample_per_eb * (double)total_blocks;
     double est_ratio_unpadded = (est_padded_cmp_size > 0) ? unpadded_size / est_padded_cmp_size : 0.0;
+    float time_profile = timer_GPU.GetCounter();
 
     printf("  Profiling Time: %.3f ms\n", time_profile);
     printf("  Selected AbsEB: %.6e (RelEB: %.6e)\n", absEB, relEB);
     printf("  Estimated Ratio: %.2f (Target: %.2f)\n", est_ratio_unpadded, target_ratio);
-
-    // --- Step 2: Compression (strict end-to-end: H2D + kernel + D2H) ---
+    // --- Step 2: Compression (compression kernel only, matching the 1D CLI) ---
     printf("Starting Compression...\n");
     size_t compressed_size = 0;
-    unsigned char* h_scratch = (unsigned char*)malloc(num_elements * sizeof(float));
 
+    // Time the compression kernel only (d_data is const-input and unchanged; the
+    // compressor manages its own buffers). Matches the 1D/3D CLIs.
     timer_GPU.StartCounter();
-    CHECK_CUDA(cudaMemcpyAsync(d_data, h_data.data(), num_elements * sizeof(float), cudaMemcpyHostToDevice, stream));
     if (mode == CUSZP_MODE_PLAIN)
         cuSZp_compress_2D_plain_f32(d_data, d_compressed, num_elements, &compressed_size, dims, absEB, stream);
     else
         cuSZp_compress_2D_outlier_f32(d_data, d_compressed, num_elements, &compressed_size, dims, absEB, stream);
-    CHECK_CUDA(cudaMemcpyAsync(h_scratch, d_compressed, num_elements * sizeof(float), cudaMemcpyDeviceToHost, stream));
     float time_compress = timer_GPU.GetCounter();
-    free(h_scratch);
 
     printf("  Compression Time: %.3f ms\n", time_compress);
     printf("  Compressed Size: %zu\n", compressed_size);
