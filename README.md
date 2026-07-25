@@ -4,15 +4,6 @@ This repository contains the source code and evaluation scripts for the SC'25
 AD/AE process of the paper *From Error-Bounded to Fixed-Ratio: Efficient
 Sampling-Guided GPU Lossy Compression*.
 
-MILIO is a GPU lossy compressor that reaches a **user-specified compression
-ratio** in a single pass while still reporting a **pointwise error bound** for
-every field. It uses sampling-guided error-bound selection: given a target ratio
-*R*, MILIO profiles a small sample of the input to estimate the ratio–error
-relationship, selects the error bound that meets *R*, and compresses the full
-field with that bound — without host-driven trial-and-error re-compression.
-Across nine scientific datasets it sustains about 220 GB/s on an NVIDIA A100,
-roughly 2.82× the throughput of cuZFP at matched ratios.
-
 The rest of this README has two parts: Section 1 builds MILIO and prepares the
 datasets; Section 2 reproduces the paper's results.
 
@@ -102,8 +93,19 @@ GPU or the datasets.
 
 ### 2.1 Throughput — Figures 10, 11, 12
 
-```bash
-cd ADAE/PART1 && ./run_part1.sh
+```
+$ cd ADAE/PART1 && ./run_part1.sh
+== [1/4] Building fixed-ratio CLIs ==
+== [3/4] Running MILIO fixed-ratio benchmark ==
+for CESM, found 33 files. ... for SCALE, 12 files.
+Generated 420 commands. Submitting job...
+== [3/4] Running cuZFP baseline benchmark ==
+Generated 210 commands. Submitting job...
+== [4/4] Rendering figures ==
+FixRatio - Models: ['CESM', ..., 'SCALE']
+Generated chart: chart_summary_compression.pdf
+... (6 figures total) ...
+== Done. Figures: ==
 ```
 
 Runs the MILIO fixed-ratio benchmark and the cuZFP baseline over all datasets
@@ -115,8 +117,16 @@ reproduced end-to-end throughput at *R* = 4 averages ~246 GB/s (MILIO-p) and
 
 ### 2.2 Reconstruction quality — Figures 14, 15
 
-```bash
-cd ADAE/PART2 && ./run_part2.sh
+```
+$ cd ADAE/PART2 && ./run_part2.sh
+== [3/5] Running MILIO + cuZFP ratio sweep (2..32) ==
+== [4/5] Generating CESM CLDHGH reconstructions ==
+== [5/5] Rendering figures ==
+Plotting PSNR for datasets: ['NYX', ..., 'RTM']
+Generated chart: chart_rd_CESM.pdf
+... (5 rd + 5 ssim figures) ...
+Wrote benchmark_charts/chart_visual_comparison.pdf
+== Done. Figures: ==
 ```
 
 Renders the per-dataset PSNR-vs-bitrate and SSIM-vs-bitrate curves and the CESM
@@ -132,8 +142,20 @@ MILIO-o CR=16.03 PSNR=35.0  SSIM=0.882   (faithful)
 
 ### 2.3 Ratio accuracy — Table III, Figures 13 and 19
 
-```bash
-cd ADAE/PART3 && ./run_part3.sh
+```
+$ cd ADAE/PART3 && ./run_part3.sh
+== [3/4] Running MILIO benchmark (TABLE III) ==
+Generated 420 commands. Submitting job...
+== [3/4] Running error-bound sweep (128 bounds) ==
+Generated 18 commands. Submitting job...
+== [4/4] TABLE III, HACC ratio trend (Fig. 13),
+         eb-density figures (Fig. 19) ==
+Wrote table3.md / table3.tex
+Found fields: ['vx','vy','vz','xx','yy','zz']
+Generated chart: chart_hacc_ratio_trend.pdf
+Generated chart: chart_eb_density_CESM.pdf
+... (9 datasets) ...
+== Done. ==
 ```
 
 Emits Table III, the HACC target-vs-achieved ratio trend across its six fields
