@@ -42,6 +42,18 @@ echo "  zfp       : $ZFP_EXE"
 echo "  slurm     : $SLURM_ACCOUNT / $SLURM_PARTITION"
 echo "  output    : $OUT"
 
+# Fail loudly if a benchmark's Slurm job produced no results (e.g. a transient
+# node Prolog/boot failure) instead of silently rendering empty figures.
+require_results() {  # <logfile> <result-regex> <human-readable name>
+  if ! grep -qE "$2" "$1" 2>/dev/null; then
+    echo "ERROR: $3 produced no results in:" >&2
+    echo "         $1" >&2
+    echo "       The Slurm GPU job likely failed to run (often a transient node" >&2
+    echo "       Prolog/boot failure). Re-run this script to retry." >&2
+    exit 1
+  fi
+}
+
 if [[ "$PLOT_ONLY" -eq 0 ]]; then
   # ---- 1. Build the fixed-ratio CLIs --------------------------------------
   echo "== [1/5] Building fixed-ratio CLIs =="
@@ -63,6 +75,8 @@ if [[ "$PLOT_ONLY" -eq 0 ]]; then
   # ---- 3. Run the rate-distortion sweep (single-GPU Slurm job) ------------
   echo "== [3/5] Running MILIO + cuZFP ratio sweep (targets 2..32) =="
   ( cd "$REPO_ROOT" && python3 "$TMP/run_rd_comparison.py" )
+  require_results "$REPO_ROOT/benchmark_rd_comparison.log" \
+                  "psnr=" "rate-distortion sweep"
   cp "$REPO_ROOT/benchmark_rd_comparison.log" "$OUT/"
 
   # ---- 4. Generate the four Fig. 15 reconstructions -----------------------

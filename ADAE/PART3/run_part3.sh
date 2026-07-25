@@ -39,6 +39,18 @@ echo "  data root : $DATA_ROOT"
 echo "  slurm     : $SLURM_ACCOUNT / $SLURM_PARTITION"
 echo "  output    : $OUT"
 
+# Fail loudly if a benchmark's Slurm job produced no results (e.g. a transient
+# node Prolog/boot failure) instead of silently rendering empty figures/tables.
+require_results() {  # <logfile> <result-regex> <human-readable name>
+  if ! grep -qE "$2" "$1" 2>/dev/null; then
+    echo "ERROR: $3 produced no results in:" >&2
+    echo "         $1" >&2
+    echo "       The Slurm GPU job likely failed to run (often a transient node" >&2
+    echo "       Prolog/boot failure). Re-run this script to retry." >&2
+    exit 1
+  fi
+}
+
 if [[ "$PLOT_ONLY" -eq 0 ]]; then
   # ---- 1. Build the CLIs and the error-bound sweep tool --------------------
   echo "== [1/4] Building fixed-ratio CLIs + error-bound sweep tool =="
@@ -60,21 +72,27 @@ if [[ "$PLOT_ONLY" -eq 0 ]]; then
   # ---- 3. Run the benchmarks (each submits its own single-GPU Slurm job) ---
   echo "== [3/4] Running MILIO fixed-ratio benchmark (TABLE III, R=4,6,8) =="
   ( cd "$REPO_ROOT" && python3 "$TMP/benchmark_fixratio_all.py" )
+  require_results "$REPO_ROOT/benchmark_fixratio_warmup_output.log" \
+                  "Total \(Prof\+Comp\) Thrpt:" "MILIO fixed-ratio benchmark (TABLE III)"
   echo "== [3/4] Running error-bound accuracy sweep (128 error bounds) =="
   ( cd "$REPO_ROOT" && python3 "$TMP/benchmark_eb_accuracy.py" )
+  require_results "$REPO_ROOT/benchmark_eb_accuracy_output.log" \
+                  "^DATA:" "error-bound accuracy sweep"
 
   cp "$REPO_ROOT/benchmark_fixratio_warmup_output.log" "$OUT/"
   cp "$REPO_ROOT/benchmark_eb_accuracy_output.log"      "$OUT/"
 fi
 
-# ---- 4. Reproduce TABLE III and render the error-bound density figures -----
-echo "== [4/4] Reproducing TABLE III and error-bound density figures =="
+# ---- 4. Reproduce TABLE III and render the accuracy figures ---------------
+echo "== [4/4] Reproducing TABLE III, HACC ratio trend (Fig. 13), and"
+echo "         error-bound density figures (Fig. 19) =="
 if [[ ! -f "$OUT/benchmark_fixratio_warmup_output.log" || ! -f "$OUT/benchmark_eb_accuracy_output.log" ]]; then
   echo "ERROR: benchmark logs not found in $OUT (run without --plot-only first)." >&2
   exit 1
 fi
 ( cd "$OUT" && \
   python3 "$SCRIPTS/generate_table3.py" && \
+  python3 "$SCRIPTS/plot_hacc_ratio_trend.py" && \
   python3 "$SCRIPTS/plot_eb_density.py" )
 
 echo "== Done. =="

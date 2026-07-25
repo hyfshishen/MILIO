@@ -1,23 +1,26 @@
 #!/usr/bin/env python3
 """Download and arrange the evaluation datasets for MILIO.
 
-Downloads 8 of the 9 datasets (all except RTM) into DATA_ROOT (default:
-``./datasets``, override with --data-root or the DATA_ROOT environment
-variable), extracts the SDRBench archives, and removes the archives afterwards
-(keep them with --keep-archives).
+Downloads all nine datasets into DATA_ROOT (default: ``./datasets``, override
+with --data-root or the DATA_ROOT environment variable):
 
-RTM cannot be downloaded through direct link access using wget/urllib; download
-its three fields (pressure_1000, pressure_2000, pressure_3000) manually from
-the Google Drive links in the AD/AE appendix (or the README), create a folder
-``rtm`` under DATA_ROOT, and move the three fields inside it.
+  * 8 direct-download datasets (7 SDRBench archives + the Open-SciVis
+    SYNTHESIS raw file), fetched over HTTP(S) and extracted in place.
+  * RTM, hosted on a public Google Drive folder, fetched with ``gdown``
+    (installed on demand). If the automated download ever fails, the script
+    prints the folder link and where to place the three fields manually.
 
-The script is idempotent: datasets that are already arranged are skipped.
+The script is idempotent: datasets that are already arranged are skipped, so it
+is safe to re-run after an interruption.
 
 Usage:
-  python3 download_datasets.py [--data-root DIR] [--keep-archives] [--dry-run]
+  python3 download_datasets.py [--data-root DIR] [--keep-archives]
+                               [--skip-rtm] [--dry-run]
 """
 import argparse
+import glob
 import os
+import subprocess
 import sys
 import tarfile
 import urllib.request
@@ -25,12 +28,13 @@ import urllib.request
 SDR = ("https://g-8d6b0.fd635.8443.data.globus.org/"
        "ds131.2/Data-Reduction-Repo/raw-data")
 
-# (archive name, URL, marker path that indicates the dataset is already arranged)
+# (archive name, URL, marker dir that indicates the dataset is already arranged)
+# Marker names verified against the actual archive contents.
 ARCHIVES = [
-    ("SDRBENCH-CESM-ATM-26x1800x3600.tar.gz",
+    ("SDRBENCH-CESM-ATM-26x1800x3600.tar.gz",       # CESM 3D fields
      f"{SDR}/CESM-ATM/SDRBENCH-CESM-ATM-26x1800x3600.tar.gz",
      "SDRBENCH-CESM-ATM-26x1800x3600"),
-    ("SDRBENCH-CESM-ATM-1800x3600.tar.gz",          # 2D CLDHGH (Fig. 15)
+    ("SDRBENCH-CESM-ATM-1800x3600.tar.gz",          # CESM 2D CLDHGH (Fig. 15)
      f"{SDR}/CESM-ATM/SDRBENCH-CESM-ATM-1800x3600.tar.gz",
      "1800x3600"),
     ("EXASKY-HACC-data-big-size.tar.gz",            # 1-billion-particle snapshot
@@ -61,12 +65,16 @@ RAW_FILES = [
      "synthetic_truss_with_five_defects_1200x1200x1200_float32.raw"),
 ]
 
-RTM_NOTE = """\
-NOTE: RTM (pressure_1000/2000/3000) cannot be downloaded through direct link
-access. Please download the three fields manually from the Google Drive links
-in the AD/AE appendix (or README), then:
-  mkdir -p {root}/rtm
-  mv pressure_1000 pressure_2000 pressure_3000 {root}/rtm/
+# RTM is a Google Drive folder holding pressure_1000 / _2000 / _3000.
+RTM_FOLDER_URL = ("https://drive.google.com/drive/folders/"
+                  "1arA8kjqAQXbYINUBndgMA7oDrfXxx4mU")
+
+RTM_MANUAL = """\
+  RTM could not be downloaded automatically. Download the three fields manually
+  from:
+      {url}
+  then place them under {root}/rtm/
+  (pressure_1000, pressure_2000, pressure_3000).
 """
 
 
@@ -101,6 +109,51 @@ def extract(archive, root, dry=False):
         tf.extractall(root)
 
 
+def ensure_gdown():
+    """Import gdown, installing it into the user site on demand."""
+    try:
+        import gdown  # noqa: F401
+        return True
+    except ImportError:
+        print("  gdown not found; installing it (pip install --user gdown) ...")
+        try:
+            subprocess.check_call([sys.executable, "-m", "pip", "install",
+                                   "--user", "--quiet", "gdown"])
+            import gdown  # noqa: F401
+            return True
+        except Exception as e:
+            print(f"  could not install gdown automatically: {e}")
+            return False
+
+
+def rtm_present(root):
+    return bool(glob.glob(os.path.join(root, "rtm", "**", "pressure_*"),
+                          recursive=True))
+
+
+def download_rtm(root, dry=False):
+    if rtm_present(root):
+        print("[skip] RTM (already arranged: rtm/)")
+        return
+    if dry:
+        print(f"  [dry-run] would fetch RTM folder via gdown -> {root}/rtm")
+        return
+    if not ensure_gdown():
+        print(RTM_MANUAL.format(url=RTM_FOLDER_URL, root=root))
+        return
+    import gdown
+    out = os.path.join(root, "rtm")
+    os.makedirs(out, exist_ok=True)
+    print("[get ] RTM (Google Drive folder)")
+    try:
+        gdown.download_folder(RTM_FOLDER_URL, output=out,
+                              quiet=False, use_cookies=False)
+    except Exception as e:
+        print(f"  gdown failed: {e}")
+    if not rtm_present(root):
+        print(RTM_MANUAL.format(url=RTM_FOLDER_URL, root=root))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--data-root",
@@ -108,6 +161,8 @@ def main():
                     help="target directory (default: $DATA_ROOT or ./datasets)")
     ap.add_argument("--keep-archives", action="store_true",
                     help="keep the downloaded .tar.gz archives after extraction")
+    ap.add_argument("--skip-rtm", action="store_true",
+                    help="do not attempt the RTM (Google Drive) download")
     ap.add_argument("--dry-run", action="store_true",
                     help="only show what would be done")
     args = ap.parse_args()
@@ -138,9 +193,14 @@ def main():
         print(f"[get ] {name}")
         download(url, dest, args.dry_run)
 
-    print()
-    print(RTM_NOTE.format(root=root))
-    print("Done. 8/9 datasets arranged (RTM requires the manual step above).")
+    if args.skip_rtm:
+        print("[skip] RTM (--skip-rtm)")
+    else:
+        download_rtm(root, args.dry_run)
+
+    print("\nDone.")
+    if not rtm_present(root) and not args.skip_rtm and not args.dry_run:
+        print("NOTE: RTM is not present yet -- see the message above.")
 
 
 if __name__ == "__main__":

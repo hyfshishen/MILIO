@@ -42,6 +42,18 @@ echo "  zfp       : $ZFP_EXE"
 echo "  slurm     : $SLURM_ACCOUNT / $SLURM_PARTITION"
 echo "  output    : $OUT"
 
+# Fail loudly if a benchmark's Slurm job produced no results (e.g. a transient
+# node Prolog/boot failure) instead of silently rendering empty figures.
+require_results() {  # <logfile> <result-regex> <human-readable name>
+  if ! grep -qE "$2" "$1" 2>/dev/null; then
+    echo "ERROR: $3 produced no results in:" >&2
+    echo "         $1" >&2
+    echo "       The Slurm GPU job likely failed to run (often a transient node" >&2
+    echo "       Prolog/boot failure). Re-run this script to retry." >&2
+    exit 1
+  fi
+}
+
 if [[ "$PLOT_ONLY" -eq 0 ]]; then
   # ---- 1. Build the fixed-ratio CLIs --------------------------------------
   echo "== [1/4] Building fixed-ratio CLIs =="
@@ -63,8 +75,12 @@ if [[ "$PLOT_ONLY" -eq 0 ]]; then
   # ---- 3. Run the benchmarks (each submits its own single-GPU Slurm job) --
   echo "== [3/4] Running MILIO fixed-ratio benchmark (all datasets) =="
   ( cd "$REPO_ROOT" && python3 "$TMP/benchmark_fixratio_all.py" )
+  require_results "$REPO_ROOT/benchmark_fixratio_warmup_output.log" \
+                  "Total \(Prof\+Comp\) Thrpt:" "MILIO fixed-ratio benchmark"
   echo "== [3/4] Running cuZFP baseline benchmark (all datasets) =="
   ( cd "$REPO_ROOT" && python3 "$TMP/benchmark_cuzfp_all.py" )
+  require_results "$REPO_ROOT/benchmark_cuzfp_output.log" \
+                  "psnr=" "cuZFP baseline benchmark"
 
   cp "$REPO_ROOT/benchmark_fixratio_warmup_output.log" "$OUT/"
   cp "$REPO_ROOT/benchmark_cuzfp_output.log"           "$OUT/"
