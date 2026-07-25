@@ -1,6 +1,6 @@
 # MILIO
 
-This repository contains the source code and evaluation scripts for the SC'25
+This repository contains the source code and evaluation scripts for the SC'26
 AD/AE process of the paper *From Error-Bounded to Fixed-Ratio: Efficient
 Sampling-Guided GPU Lossy Compression*.
 
