@@ -4,11 +4,14 @@
 Downloads all nine datasets into DATA_ROOT (default: ``./datasets``, override
 with --data-root or the DATA_ROOT environment variable):
 
-  * 8 direct-download datasets (7 SDRBench archives + the Open-SciVis
-    SYNTHESIS raw file), fetched over HTTP(S) and extracted in place.
-  * RTM, hosted on a public Google Drive folder, fetched with ``gdown``
-    (installed on demand). If the automated download ever fails, the script
-    prints the folder link and where to place the three fields manually.
+  * The eight SDRBench archives are fetched over HTTP from SDRBench and extracted
+    in place.
+  * SYNTHESIS is served over HTTP by Open-SciVis and downloaded directly.
+  * RTM lives on a public Google Drive folder (pressure_1000/2000/3000) and is
+    fetched with ``gdown`` (installed on demand).
+
+If SDRBench is unavailable, a complete public backup of the eight archives is at:
+  https://drive.google.com/drive/folders/1iDDSqc2_-U-lYEr3XdwVjJmOeI-e0mdV
 
 The script is idempotent: datasets that are already arranged are skipped, so it
 is safe to re-run after an interruption.
@@ -25,45 +28,34 @@ import sys
 import tarfile
 import urllib.request
 
-SDR = ("https://g-8d6b0.fd635.8443.data.globus.org/"
-       "ds131.2/Data-Reduction-Repo/raw-data")
+SDR = "https://g-d0cd3f.fd635.8443.data.globus.org/raw-data"
 
-# (archive name, URL, marker dir that indicates the dataset is already arranged)
-# Marker names verified against the actual archive contents.
+# (url, archive name, marker dir, extracted dir if it differs from the marker).
+# Marker = directory the benchmark scripts expect; if the archive extracts to a
+# different top-level directory, it is renamed to the marker after extraction.
 ARCHIVES = [
-    ("SDRBENCH-CESM-ATM-26x1800x3600.tar.gz",       # CESM 3D fields
-     f"{SDR}/CESM-ATM/SDRBENCH-CESM-ATM-26x1800x3600.tar.gz",
-     "SDRBENCH-CESM-ATM-26x1800x3600"),
-    ("SDRBENCH-CESM-ATM-1800x3600.tar.gz",          # CESM 2D CLDHGH (Fig. 15)
-     f"{SDR}/CESM-ATM/SDRBENCH-CESM-ATM-1800x3600.tar.gz",
-     "1800x3600"),
-    ("EXASKY-HACC-data-big-size.tar.gz",            # 1-billion-particle snapshot
-     f"{SDR}/EXASKY/HACC/EXASKY-HACC-data-big-size.tar.gz",
-     "1billionparticles_onesnapshot"),
-    ("SDRBENCH-EXASKY-NYX-512x512x512.tar.gz",
-     f"{SDR}/EXASKY/NYX/SDRBENCH-EXASKY-NYX-512x512x512.tar.gz",
-     "SDRBENCH-EXASKY-NYX-512x512x512"),
-    ("SDRBENCH-QMCPack.tar.gz",
-     f"{SDR}/QMCPack/SDRBENCH-QMCPack.tar.gz",
-     "dataset"),
-    ("SDRBENCH-SCALE-98x1200x1200.tar.gz",
-     f"{SDR}/SCALE_LETKF/SDRBENCH-SCALE-98x1200x1200.tar.gz",
-     "SDRBENCH-SCALE_98x1200x1200"),
-    ("SDRBENCH-exaalt-copper.tar.gz",
-     f"{SDR}/EXAALT/SDRBENCH-exaalt-copper.tar.gz",
-     "SDRBENCH-exaalt-copper"),
-    ("SDRBENCH-EXAFEL-130x1480x1552.tar.gz",
-     f"{SDR}/EXAFEL/SDRBENCH-EXAFEL-130x1480x1552.tar.gz",
-     "SDRBENCH-EXAFEL-130x1480x1552"),
+    (f"{SDR}/CESM-ATM/SDRBENCH-CESM-ATM-26x1800x3600.tar.gz",   # CESM 3D fields
+     "SDRBENCH-CESM-ATM-26x1800x3600.tar.gz", "SDRBENCH-CESM-ATM-26x1800x3600", None),
+    (f"{SDR}/CESM-ATM/SDRBENCH-CESM-ATM-1800x3600.tar.gz",      # CESM 2D (Fig. 15)
+     "SDRBENCH-CESM-ATM-1800x3600.tar.gz", "1800x3600", None),
+    (f"{SDR}/EXASKY/HACC/EXASKY-HACC-data-big-size.tar.gz",     # extracts EXASKY-HACC-data-big-size/
+     "EXASKY-HACC-data-big-size.tar.gz", "1billionparticles_onesnapshot", "EXASKY-HACC-data-big-size"),
+    (f"{SDR}/EXASKY/NYX/SDRBENCH-EXASKY-NYX-512x512x512.tar.gz",
+     "SDRBENCH-EXASKY-NYX-512x512x512.tar.gz", "SDRBENCH-EXASKY-NYX-512x512x512", None),
+    (f"{SDR}/QMCPACK/SDRBENCH-QMCPack.tar.gz",                  # extracts SDRBENCH-QMCPack/
+     "SDRBENCH-QMCPack.tar.gz", "dataset", "SDRBENCH-QMCPack"),
+    (f"{SDR}/SCALE_LETKF/SDRBENCH-SCALE-98x1200x1200.tar.gz",
+     "SDRBENCH-SCALE-98x1200x1200.tar.gz", "SDRBENCH-SCALE_98x1200x1200", None),
+    (f"{SDR}/EXAALT/SDRBENCH-EXAALT-copper.tar.gz",
+     "SDRBENCH-EXAALT-copper.tar.gz", "SDRBENCH-exaalt-copper", None),
+    (f"{SDR}/EXAFEL/SDRBENCH-EXAFEL-130x1480x1552.tar.gz",
+     "SDRBENCH-EXAFEL-130x1480x1552.tar.gz", "SDRBENCH-EXAFEL-130x1480x1552", None),
 ]
 
-# Plain files downloaded as-is (no extraction).
-RAW_FILES = [
-    ("synthetic_truss_with_five_defects_1200x1200x1200_float32.raw",
-     "http://klacansky.com/open-scivis-datasets/"
-     "synthetic_truss_with_five_defects/"
-     "synthetic_truss_with_five_defects_1200x1200x1200_float32.raw"),
-]
+# SYNTHESIS is served over HTTP (no extraction, plain raw file).
+SYNTHESIS_NAME = "synthetic_truss_with_five_defects_1200x1200x1200_float32.raw"
+SYNTHESIS_URL = ("http://klacansky.com/open-scivis-datasets/"
+                 "synthetic_truss_with_five_defects/" + SYNTHESIS_NAME)
 
 # RTM is a Google Drive folder holding pressure_1000 / _2000 / _3000.
 RTM_FOLDER_URL = ("https://drive.google.com/drive/folders/"
@@ -78,7 +70,7 @@ RTM_MANUAL = """\
 """
 
 
-def download(url, dest, dry=False):
+def http_download(url, dest, dry=False):
     if dry:
         print(f"  [dry-run] would download {url}")
         return
@@ -110,7 +102,7 @@ def extract(archive, root, dry=False):
 
 
 def ensure_gdown():
-    """Import gdown, installing it into the user site on demand."""
+    """Import gdown, installing it into the user site on demand (RTM only)."""
     try:
         import gdown  # noqa: F401
         return True
@@ -171,35 +163,42 @@ def main():
     os.makedirs(root, exist_ok=True)
     print(f"Arranging datasets under: {root}\n")
 
-    for name, url, marker in ARCHIVES:
-        archive = os.path.join(root, name)
+    # 1. SDRBench archives (HTTP) -> extract -> normalize directory name.
+    for url, name, marker, extracted in ARCHIVES:
         if os.path.exists(os.path.join(root, marker)):
             print(f"[skip] {name} (already arranged: {marker}/)")
             continue
+        archive = os.path.join(root, name)
         if not os.path.exists(archive):
             print(f"[get ] {name}")
-            download(url, archive, args.dry_run)
+            http_download(url, archive, args.dry_run)
         else:
             print(f"[have] {name} (archive already downloaded)")
         extract(archive, root, args.dry_run)
+        if not args.dry_run and extracted and extracted != marker:
+            src = os.path.join(root, extracted)
+            if os.path.isdir(src):
+                os.rename(src, os.path.join(root, marker))
+                print(f"  renamed {extracted}/ -> {marker}/")
         if not args.keep_archives and not args.dry_run:
             os.remove(archive)
 
-    for name, url in RAW_FILES:
-        dest = os.path.join(root, name)
-        if os.path.exists(dest):
-            print(f"[skip] {name} (already downloaded)")
-            continue
-        print(f"[get ] {name}")
-        download(url, dest, args.dry_run)
+    # 2. SYNTHESIS (HTTP).
+    dest = os.path.join(root, SYNTHESIS_NAME)
+    if os.path.exists(dest):
+        print(f"[skip] {SYNTHESIS_NAME} (already downloaded)")
+    else:
+        print(f"[get ] {SYNTHESIS_NAME}")
+        http_download(SYNTHESIS_URL, dest, args.dry_run)
 
+    # 3. RTM (Google Drive folder).
     if args.skip_rtm:
         print("[skip] RTM (--skip-rtm)")
     else:
         download_rtm(root, args.dry_run)
 
     print("\nDone.")
-    if not rtm_present(root) and not args.skip_rtm and not args.dry_run:
+    if not args.dry_run and not args.skip_rtm and not rtm_present(root):
         print("NOTE: RTM is not present yet -- see the message above.")
 
 
